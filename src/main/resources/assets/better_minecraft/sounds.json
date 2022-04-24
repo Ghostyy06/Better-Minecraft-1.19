@@ -1,0 +1,51 @@
+{
+  "block.voidsteel_debris.break": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_debris/heavy1",
+      "better_minecraft:block/voidsteel_debris/heavy2",
+      "better_minecraft:block/voidsteel_debris/heavy3",
+      "better_minecraft:block/voidsteel_debris/heavy4",
+      "better_minecraft:block/voidsteel_debris/heavy5"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.voidsteel_debris.fall": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_debris/light1",
+      "better_minecraft:block/voidsteel_debris/light2",
+      "better_minecraft:block/voidsteel_debris/light3",
+      "better_minecraft:block/voidsteel_debris/light4",
+      "better_minecraft:block/voidsteel_debris/light5"
+    ]
+  },
+  "block.voidsteel_debris.hit": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_debris/light1",
+      "better_minecraft:block/voidsteel_debris/light2",
+      "better_minecraft:block/voidsteel_debris/light3",
+      "better_minecraft:block/voidsteel_debris/light4",
+      "better_minecraft:block/voidsteel_debris/light5"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.voidsteel_debris.place": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_debris/heavy1",
+      "better_minecraft:block/voidsteel_debris/heavy2",
+      "better_minecraft:block/voidsteel_debris/heavy3",
+      "better_minecraft:block/voidsteel_debris/heavy4",
+      "better_minecraft:block/voidsteel_debris/heavy5"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.voidsteel_debris.step": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_debris/light1",
+      "better_minecraft:block/voidsteel_debris/light2",
+      "better_minecraft:block/voidsteel_debris/light3",
+      "better_minecraft:block/voidsteel_debris/light4",
+      "better_minecraft:block/voidsteel_debris/light5"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  }
+}

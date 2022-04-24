@@ -9,6 +9,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
+    public static final Item VOIDSTEEL_SCRAP = registerItem("voidsteel_scrap",
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item VOIDSTEEL_INGOT = registerItem("voidsteel_ingot",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 

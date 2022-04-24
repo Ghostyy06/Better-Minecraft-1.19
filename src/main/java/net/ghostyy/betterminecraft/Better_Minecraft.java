@@ -1,6 +1,7 @@
 package net.ghostyy.betterminecraft;
 
 import net.fabricmc.api.ModInitializer;
+import net.ghostyy.betterminecraft.block.ModBlocks;
 import net.ghostyy.betterminecraft.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,5 +15,6 @@ public class Better_Minecraft implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
