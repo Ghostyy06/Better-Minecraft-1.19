@@ -6,7 +6,15 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "VoidsteelKnockbackResistanceMixin",
+    "FireAspectMixin",
+    "PunchMixin",
+    "FrostWalkerMixin",
+    "ProtectionMixin",
+    "PiercingMixin",
+    "KnockbackMixin",
+    "BindingCurseMixin",
+    "VanishingCurseMixin"
   ],
   "injectors": {
     "defaultRequire": 1

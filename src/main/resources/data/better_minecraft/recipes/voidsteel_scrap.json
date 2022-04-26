@@ -1,0 +1,14 @@
+{
+  "type": "better_minecraft:netherite_blast_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:lava_bucket"
+    },
+    {
+      "item": "better_minecraft:voidsteel_debris"
+    }
+  ],
+  "output": {
+    "item": "better_minecraft:voidsteel_scrap"
+  }
+}

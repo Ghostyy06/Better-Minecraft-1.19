@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.ghostyy.betterminecraft.Better_Minecraft"
+    ],
+    "client": [
+      "net.ghostyy.betterminecraft.Better_Minecraft_Client"
     ]
   },
   "mixins": [

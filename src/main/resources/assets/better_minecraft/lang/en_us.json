@@ -1,7 +1,21 @@
 {
   "item.better_minecraft.voidsteel_scrap": "Voidsteel Scrap",
   "item.better_minecraft.voidsteel_ingot": "Voidsteel Ingot",
+  "item.better_minecraft.voidsteel_sword": "Voidsteel Sword",
+  "item.better_minecraft.voidsteel_pickaxe": "Voidsteel Pickaxe",
+  "item.better_minecraft.voidsteel_axe": "Voidsteel Axe",
+  "item.better_minecraft.voidsteel_shovel": "Voidsteel Shovel",
+  "item.better_minecraft.voidsteel_hoe": "Voidsteel Hoe",
+  "item.better_minecraft.voidsteel_helmet": "Voidsteel Helmet",
+  "item.better_minecraft.voidsteel_chestplate": "Voidsteel Chestplate",
+  "item.better_minecraft.voidsteel_leggings": "Voidsteel Leggings",
+  "item.better_minecraft.voidsteel_boots": "Voidsteel Boots",
 
   "block.better_minecraft.voidsteel_debris": "Voidsteel Debris",
-  "block.better_minecraft.voidsteel_block": "Voidsteel Block"
+  "block.better_minecraft.voidsteel_block": "Voidsteel Block",
+  "block.better_minecraft.netherite_blast_furnace": "Netherite Blast Furnace",
+
+  "subtitles.item.armor.equip_voidsteel": "Voidsteel Armor Clanks",
+
+  "container.netherite_blast_furnace": "Netherite Blast Furnace"
 }

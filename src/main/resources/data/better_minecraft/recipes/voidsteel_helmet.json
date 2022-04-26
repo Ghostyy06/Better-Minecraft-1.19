@@ -1,0 +1,14 @@
+{
+  "type": "better_minecraft:netherite_blast_furnace",
+  "ingredients": [
+    {
+      "item": "better_minecraft:voidsteel_ingot"
+    },
+    {
+      "item": "minecraft:netherite_helmet"
+    }
+  ],
+  "output": {
+    "item": "better_minecraft:voidsteel_helmet"
+  }
+}

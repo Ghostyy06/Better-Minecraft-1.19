@@ -1,5 +1,5 @@
 {
-  "block.voidsteel_debris.break": {
+  "voidsteel_debris_break": {
     "sounds": [
       "better_minecraft:block/voidsteel_debris/heavy1",
       "better_minecraft:block/voidsteel_debris/heavy2",
@@ -9,7 +9,7 @@
     ],
     "subtitle": "subtitles.block.generic.break"
   },
-  "block.voidsteel_debris.fall": {
+  "voidsteel_debris_fall": {
     "sounds": [
       "better_minecraft:block/voidsteel_debris/light1",
       "better_minecraft:block/voidsteel_debris/light2",
@@ -18,7 +18,7 @@
       "better_minecraft:block/voidsteel_debris/light5"
     ]
   },
-  "block.voidsteel_debris.hit": {
+  "voidsteel_debris_hit": {
     "sounds": [
       "better_minecraft:block/voidsteel_debris/light1",
       "better_minecraft:block/voidsteel_debris/light2",
@@ -28,7 +28,7 @@
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
-  "block.voidsteel_debris.place": {
+  "voidsteel_debris_place": {
     "sounds": [
       "better_minecraft:block/voidsteel_debris/heavy1",
       "better_minecraft:block/voidsteel_debris/heavy2",
@@ -38,7 +38,7 @@
     ],
     "subtitle": "subtitles.block.generic.place"
   },
-  "block.voidsteel_debris.step": {
+  "voidsteel_debris_step": {
     "sounds": [
       "better_minecraft:block/voidsteel_debris/light1",
       "better_minecraft:block/voidsteel_debris/light2",
@@ -47,5 +47,96 @@
       "better_minecraft:block/voidsteel_debris/light5"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "voidsteel_block_break": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_block/heavy1",
+      "better_minecraft:block/voidsteel_block/heavy2",
+      "better_minecraft:block/voidsteel_block/heavy3",
+      "better_minecraft:block/voidsteel_block/heavy4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "voidsteel_block_fall": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_block/light1",
+      "better_minecraft:block/voidsteel_block/light2",
+      "better_minecraft:block/voidsteel_block/light3",
+      "better_minecraft:block/voidsteel_block/light4",
+      "better_minecraft:block/voidsteel_block/light5",
+      "better_minecraft:block/voidsteel_block/light6"
+    ]
+  },
+  "voidsteel_block_hit": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_block/light1",
+      "better_minecraft:block/voidsteel_block/light2",
+      "better_minecraft:block/voidsteel_block/light3",
+      "better_minecraft:block/voidsteel_block/light4",
+      "better_minecraft:block/voidsteel_block/light5",
+      "better_minecraft:block/voidsteel_block/light6"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "voidsteel_block_place": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_block/heavy1",
+      "better_minecraft:block/voidsteel_block/heavy2",
+      "better_minecraft:block/voidsteel_block/heavy3",
+      "better_minecraft:block/voidsteel_block/heavy4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "voidsteel_block_step": {
+    "sounds": [
+      "better_minecraft:block/voidsteel_block/light1",
+      "better_minecraft:block/voidsteel_block/light2",
+      "better_minecraft:block/voidsteel_block/light3",
+      "better_minecraft:block/voidsteel_block/light4",
+      "better_minecraft:block/voidsteel_block/light5",
+      "better_minecraft:block/voidsteel_block/light6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "voidsteel_armor_equip": {
+    "sounds": [
+      {
+        "name": "better_minecraft:item/armor/equip_voidsteel1",
+        "volume": 0.8
+      },
+      {
+        "name": "better_minecraft:item/armor/equip_voidsteel1",
+        "pitch": 0.9,
+        "volume": 0.8
+      },
+      {
+        "name": "better_minecraft:item/armor/equip_voidsteel2",
+        "volume": 0.8
+      },
+      {
+        "name": "better_minecraft:item/armor/equip_voidsteel2",
+        "pitch": 0.9,
+        "volume": 0.8
+      },
+      {
+        "name": "better_minecraft:item/armor/equip_voidsteel3",
+        "volume": 0.8
+      },
+      {
+        "name": "better_minecraft:item/armor/equip_voidsteel3",
+        "pitch": 0.9,
+        "volume": 0.8
+      },
+      {
+        "name": "better_minecraft:item/armor/equip_voidsteel4",
+        "volume": 0.8
+      },
+      {
+        "name": "better_minecraft:item/armor/equip_voidsteel4",
+        "pitch": 0.9,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.item.armor.equip_voidsteel"
   }
 }

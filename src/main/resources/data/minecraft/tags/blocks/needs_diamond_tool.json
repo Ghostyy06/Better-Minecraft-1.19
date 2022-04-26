@@ -2,6 +2,7 @@
   "replace": "false",
   "values": [
     "better_minecraft:voidsteel_debris",
-    "better_minecraft:voidsteel_block"
+    "better_minecraft:voidsteel_block",
+    "better_minecraft:netherite_blast_furnace"
   ]
 }
