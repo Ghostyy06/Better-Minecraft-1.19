@@ -17,5 +17,7 @@
 
   "subtitles.item.armor.equip_voidsteel": "Voidsteel Armor Clanks",
 
-  "container.netherite_blast_furnace": "Netherite Blast Furnace"
+  "container.netherite_blast_furnace": "Netherite Blast Furnace",
+
+  "itemGroup.better_minecraft.creative_utils": "Creative Utils"
 }
