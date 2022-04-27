@@ -1,14 +1,22 @@
 {
-  "type": "better_minecraft:netherite_blast_furnace",
-  "ingredients": [
-    {
-      "item": "minecraft:netherite_ingot"
-    },
-    {
-      "item": "better_minecraft:voidsteel_scrap"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VDV",
+    "DSD",
+    "VDV"
   ],
-  "output": {
+  "key": {
+    "V": {
+      "item": "better_minecraft:voidsteel_scrap"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
     "item": "better_minecraft:voidsteel_ingot"
   }
 }

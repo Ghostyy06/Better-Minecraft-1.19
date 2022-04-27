@@ -1,14 +1,12 @@
 {
-  "type": "better_minecraft:netherite_blast_furnace",
-  "ingredients": [
-    {
-      "item": "better_minecraft:voidsteel_ingot"
-    },
-    {
-      "item": "minecraft:netherite_sword"
-    }
-  ],
-  "output": {
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "better_minecraft:voidsteel_ingot"
+  },
+  "result": {
     "item": "better_minecraft:voidsteel_sword"
   }
 }

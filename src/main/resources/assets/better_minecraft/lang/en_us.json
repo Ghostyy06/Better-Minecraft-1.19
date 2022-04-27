@@ -13,11 +13,8 @@
 
   "block.better_minecraft.voidsteel_debris": "Voidsteel Debris",
   "block.better_minecraft.voidsteel_block": "Voidsteel Block",
-  "block.better_minecraft.netherite_blast_furnace": "Netherite Blast Furnace",
 
   "subtitles.item.armor.equip_voidsteel": "Voidsteel Armor Clanks",
-
-  "container.netherite_blast_furnace": "Netherite Blast Furnace",
 
   "itemGroup.better_minecraft.creative_utils": "Creative Utils"
 }
