@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+	"group": "stained_glass",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": {
+			"tag": "better_minecraft:glass"
+		},
+        "O": {
+            "item": "minecraft:pink_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:pink_stained_glass",
+        "count": 8
+    }
+}

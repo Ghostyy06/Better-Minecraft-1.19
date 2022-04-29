@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+	"group": "stained_terracotta",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": {
+			"tag": "better_minecraft:terracotta"
+		},
+        "O": {
+            "item": "minecraft:orange_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:orange_terracotta",
+        "count": 8
+    }
+}

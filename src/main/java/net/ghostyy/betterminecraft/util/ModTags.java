@@ -24,6 +24,7 @@ public class ModTags {
         }
 
         public static final TagKey<Block> BASE_STONE_END = createTag("base_stone_end");
+        public static final TagKey<Block> MINEABLE_VOIDSTEEL = createTag("mineable_voidsteel");
     }
 
     //Items
@@ -36,7 +37,5 @@ public class ModTags {
         private static TagKey<Item> createCommonTag(String name) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier("c", name));
         }
-
-
     }
 }

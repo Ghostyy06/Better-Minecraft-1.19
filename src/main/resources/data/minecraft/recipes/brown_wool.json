@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+	"group": "wool",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": {
+			"tag": "better_minecraft:wool"
+		},
+        "O": {
+            "item": "minecraft:brown_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:brown_wool",
+        "count": 8
+    }
+}

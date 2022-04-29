@@ -12,12 +12,6 @@
       ],
       "conditions": [
         {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "tag": "better_minecraft:can_mine_voidsteel"
-          }
-        },
-        {
           "condition": "minecraft:survives_explosion"
         }
       ]

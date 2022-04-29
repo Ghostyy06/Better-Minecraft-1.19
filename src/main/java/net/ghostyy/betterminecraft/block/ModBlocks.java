@@ -4,13 +4,11 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.ghostyy.betterminecraft.Better_Minecraft;
 import net.ghostyy.betterminecraft.sound.ModSounds;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -19,12 +17,21 @@ import java.util.function.ToIntFunction;
 
 public class ModBlocks {
 
+    //Voidsteel
     public static final Block VOIDSTEEL_DEBRIS = registerBlock("voidsteel_debris",
             new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(40.0f,1600.0f)
                     .requiresTool().sounds(ModSounds.VOIDSTEEL_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
     public static final Block VOIDSTEEL_BLOCK = registerBlock("voidsteel_block",
             new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(60.0f,1600.0f)
                     .requiresTool().sounds(ModSounds.VOIDSTEEL_BLOCK)), ItemGroup.BUILDING_BLOCKS);
+
+    //Calcite
+    public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
+            new StairsBlock(Blocks.CALCITE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.BUILDING_BLOCKS);
+    public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.BUILDING_BLOCKS);
+    public static final Block CALCITE_WALL = registerBlock("calcite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.DECORATIONS);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
@@ -36,9 +43,5 @@ public class ModBlocks {
     }
     public static void registerModBlocks() {
         Better_Minecraft.LOGGER.info("Registering mod blocks for " + Better_Minecraft.MODID);
-    }
-
-    private static ToIntFunction<BlockState> createLightLevelFromLitBlockState(int litLevel) {
-        return state -> state.get(Properties.LIT) ? litLevel : 0;
     }
 }

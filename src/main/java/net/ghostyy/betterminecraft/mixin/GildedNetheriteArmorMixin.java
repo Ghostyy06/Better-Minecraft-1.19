@@ -21,7 +21,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.UUID;
 
 @Mixin(ArmorItem.class)
-public abstract class VoidsteelKnockbackResistanceMixin {
+public abstract class GildedNetheriteArmorMixin {
 	@Shadow
 	@Final private static UUID[] MODIFIERS;
 	@Shadow @Final
@@ -33,7 +33,7 @@ public abstract class VoidsteelKnockbackResistanceMixin {
 	private void constructor(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings, CallbackInfo ci) {
 		UUID uUID = MODIFIERS[slot.getEntitySlotId()];
 
-		if (material == ModArmorMaterials.VOIDSTEEL) {
+		if (material == ModArmorMaterials.GILDED_NETHERITE) {
 			ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
 
 			this.attributeModifiers.forEach(builder::put);

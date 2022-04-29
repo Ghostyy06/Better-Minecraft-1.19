@@ -6,7 +6,9 @@
   "mixins": [
   ],
   "client": [
-    "VoidsteelKnockbackResistanceMixin",
+    "VoidsteelArmorMixin",
+    "GildedNetheriteArmorMixin",
+    "ReinforcedNetheriteArmorMixin",
     "FireAspectMixin",
     "PunchMixin",
     "FrostWalkerMixin",

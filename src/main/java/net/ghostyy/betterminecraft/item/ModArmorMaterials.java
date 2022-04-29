@@ -12,7 +12,12 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    VOIDSTEEL("voidsteel", 46, new int[]{4, 7, 9, 4}, 20, ModSounds.VOIDSTEEL_ARMOR_EQUIP, 4.0f, 0.15f, () -> Ingredient.ofItems(ModItems.VOIDSTEEL_INGOT));
+    VOIDSTEEL("voidsteel", 50, new int[]{4, 7, 9, 4}, 25, ModSounds.VOIDSTEEL_ARMOR_EQUIP,
+            4.0f, 0.15f, () -> Ingredient.ofItems(ModItems.VOIDSTEEL_INGOT)),
+    GILDED_NETHERITE("gilded_netherite", 35, new int[]{3, 6, 8, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            3.0f, 0.15f, () -> Ingredient.ofItems(ModItems.GILDED_NETHERITE_INGOT)),
+    REINFORCED_NETHERITE("reinforced_netherite", 46, new int[]{3, 6, 8, 3}, 12, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            3.5f, 0.15f, () -> Ingredient.ofItems(ModItems.REINFORCED_NETHERITE_INGOT));
 
     private static final int[] BASE_DURABILITY;
     private final String name;

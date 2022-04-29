@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": {
+			"tag": "better_minecraft:concrete_powder"
+		},
+        "O": {
+            "item": "minecraft:red_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:red_concrete_powder",
+        "count": 8
+    },
+    "group": "better_minecraft_concrete_powder"
+}

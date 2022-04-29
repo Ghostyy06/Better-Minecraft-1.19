@@ -1,8 +1,12 @@
 {
-  "replace": "false",
+  "replace": false,
   "values": [
-    "better_minecraft:voidsteel_debris",
-    "better_minecraft:voidsteel_block",
-    "better_minecraft:netherite_blast_furnace"
+    "better_minecraft:calcite_stairs",
+    "better_minecraft:calcite_slab",
+    "better_minecraft:calcite_wall",
+    "minecraft:glowstone",
+    "minecraft:sea_lantern",
+    "#better_minecraft:glass",
+    "#better_minecraft:glass_pane"
   ]
 }

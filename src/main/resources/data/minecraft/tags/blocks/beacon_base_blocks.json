@@ -1,5 +1,5 @@
 {
-  "replace": "false",
+  "replace": false,
   "values": [
     "better_minecraft:voidsteel_block"
   ]
