@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin (PunchEnchantment.class)
-public class PunchMixin {
+public abstract class PunchMixin {
 
     @Inject(method = "getMaxLevel", at = @At("RETURN"))
     public int getMaxLevel(CallbackInfoReturnable ci) {

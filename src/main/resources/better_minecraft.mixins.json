@@ -4,8 +4,6 @@
   "package": "net.ghostyy.betterminecraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-  ],
-  "client": [
     "VoidsteelArmorMixin",
     "GildedNetheriteArmorMixin",
     "ReinforcedNetheriteArmorMixin",
@@ -16,7 +14,10 @@
     "PiercingMixin",
     "KnockbackMixin",
     "BindingCurseMixin",
-    "VanishingCurseMixin"
+    "VanishingCurseMixin",
+    "DungeonFeatureMixin"
+  ],
+  "client": [
   ],
   "injectors": {
     "defaultRequire": 1

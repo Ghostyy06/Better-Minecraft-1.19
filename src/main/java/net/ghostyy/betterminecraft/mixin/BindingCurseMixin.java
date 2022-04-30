@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin (BindingCurseEnchantment.class)
-public class BindingCurseMixin {
+public abstract class  BindingCurseMixin {
 
     @Inject(method = "isTreasure", at = @At("RETURN"))
     public boolean isTreasure(CallbackInfoReturnable ci) {

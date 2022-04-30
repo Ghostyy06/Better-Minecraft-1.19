@@ -50,5 +50,7 @@
 
   "subtitles.item.armor.equip_voidsteel": "Voidsteel Armor Clanks",
 
-  "itemGroup.better_minecraft.creative_utils": "Creative Utils"
+  "itemGroup.better_minecraft.creative_utils": "Creative Utils",
+
+  "enchantment.better_minecraft.bane_of_illagers": "Bane of Illagers"
 }

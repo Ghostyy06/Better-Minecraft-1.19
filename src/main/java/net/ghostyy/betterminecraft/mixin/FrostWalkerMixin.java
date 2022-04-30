@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin (FrostWalkerEnchantment.class)
-public class FrostWalkerMixin {
+public abstract class FrostWalkerMixin {
 
     @Inject(method = "getMaxLevel", at = @At("RETURN"))
     public int getMaxLevel(CallbackInfoReturnable ci) {

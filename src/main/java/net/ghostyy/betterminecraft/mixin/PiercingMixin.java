@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin (PiercingEnchantment.class)
-public class PiercingMixin {
+public abstract class PiercingMixin {
 
     @Inject(method = "getMaxLevel", at = @At("RETURN"))
     public int getMaxLevel(CallbackInfoReturnable ci) {

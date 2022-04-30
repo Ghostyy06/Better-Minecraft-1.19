@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin (FireAspectEnchantment.class)
-public class FireAspectMixin {
+public abstract class FireAspectMixin {
 
     @Inject(method = "getMaxLevel", at = @At("RETURN"))
     public int getMaxLevel(CallbackInfoReturnable ci) {

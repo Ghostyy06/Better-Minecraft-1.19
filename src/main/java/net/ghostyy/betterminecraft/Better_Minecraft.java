@@ -3,6 +3,7 @@ package net.ghostyy.betterminecraft;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.ghostyy.betterminecraft.block.ModBlocks;
+import net.ghostyy.betterminecraft.enchantment.ModEnchantments;
 import net.ghostyy.betterminecraft.item.ModItems;
 import net.ghostyy.betterminecraft.world.gen.ModWorldGeneration;
 import net.minecraft.block.Blocks;
@@ -45,5 +46,6 @@ public class Better_Minecraft implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();
+		ModEnchantments.registerModEnchantments();
 	}
 }

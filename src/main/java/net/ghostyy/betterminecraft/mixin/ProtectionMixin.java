@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin (ProtectionEnchantment.class)
-public class ProtectionMixin {
+public abstract class ProtectionMixin {
 
     @Inject(method = "getMaxLevel", at = @At("RETURN"))
     public int getMaxLevel(CallbackInfoReturnable ci) {
