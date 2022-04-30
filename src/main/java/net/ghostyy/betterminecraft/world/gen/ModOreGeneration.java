@@ -7,6 +7,14 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class ModOreGeneration {
     public static void generateOres() {
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.GILDED_NETHERITE_DEBRIS.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.GILDED_NETHERITE_DEBRIS_SMALL.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.REINFORCED_NETHERITE_DEBRIS.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.REINFORCED_NETHERITE_DEBRIS_SMALL.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.VOIDSTEEL_DEBRIS.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),

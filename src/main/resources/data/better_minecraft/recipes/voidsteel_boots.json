@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_boots"
+    "item": "better_minecraft:reinforced_netherite_boots"
   },
   "addition": {
     "item": "better_minecraft:voidsteel_ingot"

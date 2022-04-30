@@ -6,6 +6,7 @@ import net.ghostyy.betterminecraft.util.ModTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.ConfiguredFeatures;
@@ -16,6 +17,35 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
 
+    //Gilded Netherite
+    public static final List<OreFeatureConfig.Target> NETHER_GILDED_NETHERITE_DEBRIS = List.of(
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER),
+                    ModBlocks.GILDED_NETHERITE_DEBRIS.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> GILDED_NETHERITE_DEBRIS =
+            ConfiguredFeatures.register("gilded_debris", Feature.SCATTERED_ORE,
+                    new OreFeatureConfig(NETHER_GILDED_NETHERITE_DEBRIS,3, 1.0f));
+    public static final List<OreFeatureConfig.Target> NETHER_GILDED_NETHERITE_DEBRIS_SMALL = List.of(
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER),
+                    ModBlocks.GILDED_NETHERITE_DEBRIS.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> GILDED_NETHERITE_DEBRIS_SMALL =
+            ConfiguredFeatures.register("gilded_debris_small", Feature.SCATTERED_ORE,
+                    new OreFeatureConfig(NETHER_GILDED_NETHERITE_DEBRIS_SMALL,2, 1.0f));
+
+    //Reinforced Netherite
+    public static final List<OreFeatureConfig.Target> NETHER_REINFORCED_NETHERITE_DEBRIS = List.of(
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER),
+                    ModBlocks.REINFORCED_NETHERITE_DEBRIS.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> REINFORCED_NETHERITE_DEBRIS =
+            ConfiguredFeatures.register("reinforced_debris", Feature.SCATTERED_ORE,
+                    new OreFeatureConfig(NETHER_REINFORCED_NETHERITE_DEBRIS,3, 1.0f));
+    public static final List<OreFeatureConfig.Target> NETHER_REINFORCED_NETHERITE_DEBRIS_SMALL = List.of(
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER),
+                    ModBlocks.REINFORCED_NETHERITE_DEBRIS.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> REINFORCED_NETHERITE_DEBRIS_SMALL =
+            ConfiguredFeatures.register("reinforced_debris_small", Feature.SCATTERED_ORE,
+                    new OreFeatureConfig(NETHER_REINFORCED_NETHERITE_DEBRIS_SMALL,2, 1.0f));
+
+    //Voidsteel Debris
     public static final List<OreFeatureConfig.Target> END_VOIDSTEEL_DEBRIS = List.of(
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
                     ModBlocks.VOIDSTEEL_DEBRIS.getDefaultState()));
@@ -25,6 +55,8 @@ public class ModConfiguredFeatures {
     public static final List<OreFeatureConfig.Target> END_VOIDSTEEL_DEBRIS_SMALL = List.of(
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
                     ModBlocks.VOIDSTEEL_DEBRIS.getDefaultState()));
+
+    //End Obsidian
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> VOIDSTEEL_DEBRIS_SMALL =
             ConfiguredFeatures.register("voidsteel_debris_small", Feature.SCATTERED_ORE,
                     new OreFeatureConfig(END_VOIDSTEEL_DEBRIS_SMALL,2, 1.0f));

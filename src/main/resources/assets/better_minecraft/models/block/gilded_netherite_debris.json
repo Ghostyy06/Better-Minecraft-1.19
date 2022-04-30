@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "better_minecraft:block/gilded_netherite_debris_top",
+    "side": "better_minecraft:block/gilded_netherite_debris_side"
+  }
+}

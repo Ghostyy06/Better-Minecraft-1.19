@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "better_minecraft:voidsteel_block"
+    "better_minecraft:voidsteel_block",
+    "better_minecraft:gilded_netherite_block",
+    "better_minecraft:reinforced_netherite_block"
   ]
 }

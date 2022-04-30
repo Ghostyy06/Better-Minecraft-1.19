@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_helmet"
+    "item": "better_minecraft:reinforced_netherite_helmet"
   },
   "addition": {
     "item": "better_minecraft:voidsteel_ingot"

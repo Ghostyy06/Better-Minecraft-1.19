@@ -7,7 +7,7 @@
         "items": [
           {
             "items": [
-              "better_minecraft:voidsteel_ingot"
+              "better_minecraft:reinforced_netherite_debris"
             ]
           }
         ]
@@ -16,7 +16,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "better_minecraft:voidsteel_boots"
+        "recipe": "better_minecraft:reinforced_netherite_scrap_smelting"
       }
     }
   },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "better_minecraft:voidsteel_boots"
+      "better_minecraft:reinforced_netherite_scrap_smelting"
     ]
   }
 }

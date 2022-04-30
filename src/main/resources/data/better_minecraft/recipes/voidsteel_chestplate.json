@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_chestplate"
+    "item": "better_minecraft:reinforced_netherite_chestplate"
   },
   "addition": {
     "item": "better_minecraft:voidsteel_ingot"

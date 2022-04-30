@@ -17,6 +17,22 @@ import java.util.function.ToIntFunction;
 
 public class ModBlocks {
 
+    //Gilded Netherite
+    public static final Block GILDED_NETHERITE_DEBRIS = registerBlock("gilded_netherite_debris",
+            new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(30.0f,1200.0f)
+                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
+    public static final Block GILDED_NETHERITE_BLOCK = registerBlock("gilded_netherite_block",
+            new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(50.0f,1200.0f)
+                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
+
+    //Reinforced Netherite
+    public static final Block REINFORCED_NETHERITE_DEBRIS = registerBlock("reinforced_netherite_debris",
+            new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(30.0f,1200.0f)
+                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
+    public static final Block REINFORCED_NETHERITE_BLOCK = registerBlock("reinforced_netherite_block",
+            new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(50.0f,1200.0f)
+                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
+
     //Voidsteel
     public static final Block VOIDSTEEL_DEBRIS = registerBlock("voidsteel_debris",
             new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(40.0f,1600.0f)
