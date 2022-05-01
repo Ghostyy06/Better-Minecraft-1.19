@@ -49,6 +49,24 @@ public class ModBlocks {
     public static final Block CALCITE_WALL = registerBlock("calcite_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.DECORATIONS);
 
+    //Bookshelves
+    public static final Block BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+    public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+    public static final Block JUNGLE_BOOKSHELF = registerBlock("jungle_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+    public static final Block ACACIA_BOOKSHELF = registerBlock("acacia_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+    public static final Block DARK_OAK_BOOKSHELF = registerBlock("dark_oak_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+    public static final Block CRIMSON_BOOKSHELF = registerBlock("crimson_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+    public static final Block WARPED_BOOKSHELF = registerBlock("warped_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+
+
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(Better_Minecraft.MODID, name), block);

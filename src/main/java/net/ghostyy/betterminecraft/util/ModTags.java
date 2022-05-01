@@ -25,6 +25,7 @@ public class ModTags {
 
         public static final TagKey<Block> BASE_STONE_END = createTag("base_stone_end");
         public static final TagKey<Block> MINEABLE_VOIDSTEEL = createTag("mineable_voidsteel");
+        public static final TagKey<Block> BOOKSHELVES = createTag("bookshelves");
     }
 
     //Items

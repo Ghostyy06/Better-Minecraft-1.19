@@ -47,10 +47,20 @@
   "block.better_minecraft.calcite_stairs": "Calcite Stairs",
   "block.better_minecraft.calcite_slab": "Calcite Slab",
   "block.better_minecraft.calcite_wall": "Calcite Wall",
+  "block.minecraft.bookshelf": "Oak Bookshelf",
+  "block.better_minecraft.birch_bookshelf": "Birch Bookshelf",
+  "block.better_minecraft.spruce_bookshelf": "Spruce Bookshelf",
+  "block.better_minecraft.jungle_bookshelf": "Jungle Bookshelf",
+  "block.better_minecraft.acacia_bookshelf": "Acacia Bookshelf",
+  "block.better_minecraft.dark_oak_bookshelf": "Dark Oak Bookshelf",
+  "block.better_minecraft.crimson_bookshelf": "Crimson Bookshelf",
+  "block.better_minecraft.warped_bookshelf": "Warped Bookshelf",
 
   "subtitles.item.armor.equip_voidsteel": "Voidsteel Armor Clanks",
 
   "itemGroup.better_minecraft.creative_utils": "Creative Utils",
 
-  "enchantment.better_minecraft.bane_of_illagers": "Bane of Illagers"
+  "enchantment.better_minecraft.bane_of_illagers": "Bane of Illagers",
+  "enchantment.better_minecraft.poison_blade": "Poison Blade",
+  "enchantment.better_minecraft.withering_edge": "Withering Edge"
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SW ",
+    "SDW",
+    "SW "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    },
+    "D": {
+      "item": "minecraft:dropper"
+    }
+  },
+  "result": {
+    "item": "minecraft:dispenser"
+  }
+}

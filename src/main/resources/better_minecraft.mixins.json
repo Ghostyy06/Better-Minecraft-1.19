@@ -15,7 +15,10 @@
     "KnockbackMixin",
     "BindingCurseMixin",
     "VanishingCurseMixin",
-    "DungeonFeatureMixin"
+    "DungeonFeatureMixin",
+    "EnchantingTableBlockMixin",
+    "ArmorStandEntityMixin",
+    "MinecraftClientMixin"
   ],
   "client": [
   ],

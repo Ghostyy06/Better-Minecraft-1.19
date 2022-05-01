@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bookshelf",
+    "better_minecraft:birch_bookshelf",
+    "better_minecraft:spruce_bookshelf",
+    "better_minecraft:jungle_bookshelf",
+    "better_minecraft:acacia_bookshelf",
+    "better_minecraft:dark_oak_bookshelf",
+    "better_minecraft:crimson_bookshelf",
+    "better_minecraft:warped_bookshelf"
+  ]
+}
