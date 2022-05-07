@@ -11,11 +11,11 @@ import net.minecraft.util.registry.Registry;
 public class ModEnchantments {
 
     public static final Enchantment BANE_OF_ILLAGERS = register("bane_of_illagers",
-            new ModDamageEnchantment(Enchantment.Rarity.UNCOMMON, 0, EquipmentSlot.MAINHAND));
+            new ModDamageEnchantment(Enchantment.Rarity.UNCOMMON, ModDamageEnchantment.ILLAGERS, EquipmentSlot.MAINHAND));
     public static final Enchantment POISON_BLADE = register("poison_blade",
-            new ModDOTEnchantment(Enchantment.Rarity.UNCOMMON, 0, EquipmentSlot.MAINHAND));
+            new ModDOTEnchantment(Enchantment.Rarity.UNCOMMON, ModDOTEnchantment.POISON, EquipmentSlot.MAINHAND));
     public static final Enchantment WITHERING_EDGE = register("withering_edge",
-            new ModDOTEnchantment(Enchantment.Rarity.RARE, 1, EquipmentSlot.MAINHAND));
+            new ModDOTEnchantment(Enchantment.Rarity.RARE, ModDOTEnchantment.WITHER, EquipmentSlot.MAINHAND));
 
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(Better_Minecraft.MODID, name), enchantment);

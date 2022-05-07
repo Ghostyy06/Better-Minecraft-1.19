@@ -55,18 +55,35 @@ public class ModConfiguredFeatures {
     public static final List<OreFeatureConfig.Target> END_VOIDSTEEL_DEBRIS_SMALL = List.of(
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
                     ModBlocks.VOIDSTEEL_DEBRIS.getDefaultState()));
-
-    //End Obsidian
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> VOIDSTEEL_DEBRIS_SMALL =
             ConfiguredFeatures.register("voidsteel_debris_small", Feature.SCATTERED_ORE,
                     new OreFeatureConfig(END_VOIDSTEEL_DEBRIS_SMALL,2, 1.0f));
-    public static final List<OreFeatureConfig.Target> END_OBSIDIAN = List.of(
+
+    //End Obsidian
+    public static final List<OreFeatureConfig.Target> END_OBSIDIAN_CLUMP = List.of(
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
                     Blocks.OBSIDIAN.getDefaultState()));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> OBSIDIAN =
-            ConfiguredFeatures.register("end_obsidian", Feature.ORE,
-                    new OreFeatureConfig(END_OBSIDIAN,64, 0.0f));
-
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> OBSIDIAN_CLUMP =
+            ConfiguredFeatures.register("end_obsidian_clump", Feature.ORE,
+                    new OreFeatureConfig(END_OBSIDIAN_CLUMP,64, 0.0f));
+    public static final List<OreFeatureConfig.Target> END_OBSIDIAN_SHATTERED = List.of(
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
+                    Blocks.OBSIDIAN.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> OBSIDIAN_SHATTERED =
+            ConfiguredFeatures.register("end_obsidian_shattered", Feature.SCATTERED_ORE,
+                    new OreFeatureConfig(END_OBSIDIAN_SHATTERED,16, 0.0f));
+    public static final List<OreFeatureConfig.Target> END_CRYING_OBSIDIAN_CLUMP = List.of(
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
+                    Blocks.CRYING_OBSIDIAN.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CRYING_OBSIDIAN_CLUMP =
+            ConfiguredFeatures.register("end_crying_obsidian_clump", Feature.ORE,
+                    new OreFeatureConfig(END_CRYING_OBSIDIAN_CLUMP,64, 0.0f));
+    public static final List<OreFeatureConfig.Target> END_CRYING_OBSIDIAN_SHATTERED = List.of(
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
+                    Blocks.CRYING_OBSIDIAN.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CRYING_OBSIDIAN_SHATTERED =
+            ConfiguredFeatures.register("end_crying_obsidian_shattered", Feature.SCATTERED_ORE,
+                    new OreFeatureConfig(END_CRYING_OBSIDIAN_SHATTERED,16, 0.0f));
 
     public static void registerConfiguredFeatures() {
         Better_Minecraft.LOGGER.info("Regsitering configured features for " + Better_Minecraft.MODID);

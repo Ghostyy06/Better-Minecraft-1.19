@@ -31,16 +31,16 @@ public class ModItems {
 
     //Voidsteel Tools
     public static final Item VOIDSTEEL_SWORD = registerItem("voidsteel_sword",
-            new SwordItem(ModToolMaterials.VOIDSTEEL, 3, -2.4f,
+            new SwordItem(ModToolMaterials.VOIDSTEEL, 3, -2.2f,
                     new FabricItemSettings().group(ItemGroup.COMBAT).fireproof()));
     public static final Item VOIDSTEEL_PICKAXE = registerItem("voidsteel_pickaxe",
-            new VoidsteelPickaxeItem(ModToolMaterials.VOIDSTEEL, 1, -2.8f,
+            new VoidsteelPickaxeItem(ModToolMaterials.VOIDSTEEL, 1, -2.6f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static final Item VOIDSTEEL_AXE = registerItem("voidsteel_axe",
-            new ModAxeItem(ModToolMaterials.VOIDSTEEL, 5, -3.0f,
+            new ModAxeItem(ModToolMaterials.VOIDSTEEL, 5, -2.8f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static final Item VOIDSTEEL_SHOVEL = registerItem("voidsteel_shovel",
-            new ShovelItem(ModToolMaterials.VOIDSTEEL, 1.5f, -3f,
+            new ShovelItem(ModToolMaterials.VOIDSTEEL, 1.5f, -2.8f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static final Item VOIDSTEEL_HOE = registerItem("voidsteel_hoe",
             new ModHoeItem(ModToolMaterials.VOIDSTEEL, -5, 0f,
