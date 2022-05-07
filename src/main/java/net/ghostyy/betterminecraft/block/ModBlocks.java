@@ -3,17 +3,15 @@ package net.ghostyy.betterminecraft.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.ghostyy.betterminecraft.Better_Minecraft;
+import net.ghostyy.betterminecraft.block.custom.ModButtonBlock;
 import net.ghostyy.betterminecraft.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.util.function.ToIntFunction;
 
 public class ModBlocks {
 
@@ -64,6 +62,12 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
     public static final Block WARPED_BOOKSHELF = registerBlock("warped_bookshelf",
             new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+
+    //Redstone
+    public static final Block IRON_BUTTON = registerBlock("iron_button",
+            new ModButtonBlock(true, FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE);
+    public static final Block GOLD_BUTTON = registerBlock("gold_button",
+            new ModButtonBlock(false, FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE);
 
 
 
