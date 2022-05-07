@@ -18,7 +18,8 @@
     "DungeonFeatureMixin",
     "EnchantingTableBlockMixin",
     "ArmorStandEntityMixin",
-    "MinecraftClientMixin"
+    "MinecraftClientMixin",
+    "MobSpawnerLogicMixin"
   ],
   "client": [
   ],
