@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:mineable/pickaxe",
     "better_minecraft:voidsteel_debris",
     "better_minecraft:voidsteel_block"
   ]

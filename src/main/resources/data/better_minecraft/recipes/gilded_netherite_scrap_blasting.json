@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "better_minecraft:gilded_netherite_debris"
-  },
-  "result": "better_minecraft:gilded_netherite_scrap",
-  "experience": 2.0,
-  "cookingtime": 100
-}

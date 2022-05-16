@@ -9,12 +9,8 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    VOIDSTEEL(MiningLevels.NETHERITE+1, 2742, 10.0f, 5.5f, 25,
+    VOIDSTEEL(MiningLevels.NETHERITE+1, 2742, 10.0f, 5.0f, 25,
             () -> Ingredient.ofItems(ModItems.VOIDSTEEL_INGOT)),
-    GILDED_NETHERITE(MiningLevels.NETHERITE, 1796, 12.0f, 4.0f, 30,
-            () -> Ingredient.ofItems(ModItems.GILDED_NETHERITE_INGOT)),
-    REINFORCED_NETHERITE(MiningLevels.NETHERITE, 2539, 9.0f, 5.0f, 12,
-            () -> Ingredient.ofItems(ModItems.REINFORCED_NETHERITE_INGOT)),
     AMETHYST(MiningLevels.IRON, 200, 11.0f, 2.5f, 40,
             () -> Ingredient.ofItems(Items.AMETHYST_SHARD));
 

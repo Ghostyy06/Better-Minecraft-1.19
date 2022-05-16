@@ -15,27 +15,11 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
-    //Gilded Netherite
-    public static final Block GILDED_NETHERITE_DEBRIS = registerBlock("gilded_netherite_debris",
-            new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(30.0f,1200.0f)
-                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
-    public static final Block GILDED_NETHERITE_BLOCK = registerBlock("gilded_netherite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(50.0f,1200.0f)
-                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
-
-    //Reinforced Netherite
-    public static final Block REINFORCED_NETHERITE_DEBRIS = registerBlock("reinforced_netherite_debris",
-            new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(30.0f,1200.0f)
-                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
-    public static final Block REINFORCED_NETHERITE_BLOCK = registerBlock("reinforced_netherite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(50.0f,1200.0f)
-                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
-
     //Voidsteel
-    public static final Block VOIDSTEEL_DEBRIS = registerBlock("voidsteel_debris",
+    public static final Block VOIDSTEEL_DEBRIS = registerFireproofBlock("voidsteel_debris",
             new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(40.0f,1600.0f)
                     .requiresTool().sounds(ModSounds.VOIDSTEEL_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
-    public static final Block VOIDSTEEL_BLOCK = registerBlock("voidsteel_block",
+    public static final Block VOIDSTEEL_BLOCK = registerFireproofBlock("voidsteel_block",
             new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(60.0f,1600.0f)
                     .requiresTool().sounds(ModSounds.VOIDSTEEL_BLOCK)), ItemGroup.BUILDING_BLOCKS);
 
@@ -78,6 +62,15 @@ public class ModBlocks {
     private static Item registerBlockItem(String name, Block block, ItemGroup group) {
         return Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
+    }
+
+    private static Block registerFireproofBlock(String name, Block block, ItemGroup group) {
+        registerFireproofBlockItem(name, block, group);
+        return Registry.register(Registry.BLOCK, new Identifier(Better_Minecraft.MODID, name), block);
+    }
+    private static Item registerFireproofBlockItem(String name, Block block, ItemGroup group) {
+        return Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
+                new BlockItem(block, new FabricItemSettings().group(group).fireproof()));
     }
     public static void registerModBlocks() {
         Better_Minecraft.LOGGER.info("Registering mod blocks for " + Better_Minecraft.MODID);
