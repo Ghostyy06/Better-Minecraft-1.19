@@ -1,6 +1,6 @@
 package net.ghostyy.betterminecraft.enchantment.custom;
 
-import net.minecraft.client.particle.FireSmokeParticle;
+import net.ghostyy.betterminecraft.item.custom.TriBowItem;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.enchantment.FireAspectEnchantment;
@@ -10,9 +10,10 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AxeItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ModDOTEnchantment extends Enchantment {
+public class DOTEnchantment extends Enchantment {
 
     public static final int POISON = 0;
     public static final int WITHER = 1;
@@ -21,7 +22,7 @@ public class ModDOTEnchantment extends Enchantment {
     public static final int[] MIN_MAX_POWER_DIFFERENCES = new int[]{20, 20};
     public final int typeIndex;
 
-    public ModDOTEnchantment(Rarity weight, int typeIndex, EquipmentSlot ... slotTypes) {
+    public DOTEnchantment(Rarity weight, int typeIndex, EquipmentSlot ... slotTypes) {
         super(weight, EnchantmentTarget.WEAPON, slotTypes);
         this.typeIndex = typeIndex;
     }
@@ -56,7 +57,7 @@ public class ModDOTEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return !(other instanceof ModDOTEnchantment) && !(other instanceof FireAspectEnchantment);
+        return !(other instanceof DOTEnchantment) && !(other instanceof FireAspectEnchantment);
     }
 
     @Override

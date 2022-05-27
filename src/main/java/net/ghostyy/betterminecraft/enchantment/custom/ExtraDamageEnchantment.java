@@ -1,22 +1,20 @@
 package net.ghostyy.betterminecraft.enchantment.custom;
 
-import net.ghostyy.betterminecraft.enchantment.ModEnchantments;
 import net.minecraft.enchantment.DamageEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityGroup;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 
-public class ModDamageEnchantment extends Enchantment {
+public class ExtraDamageEnchantment extends Enchantment {
     public static final int ILLAGERS = 0;
     private static final int[] BASE_POWERS = new int[]{5};
     private static final int[] POWERS_PER_LEVEL = new int[]{8};
     private static final int[] MIN_MAX_POWER_DIFFERENCES = new int[]{20};
     public final int typeIndex;
-    public ModDamageEnchantment(Rarity weight, int typeIndex, EquipmentSlot ... slot) {
+    public ExtraDamageEnchantment(Rarity weight, int typeIndex, EquipmentSlot ... slot) {
         super(weight, EnchantmentTarget.WEAPON, slot);
         this.typeIndex = typeIndex;
     }
@@ -46,7 +44,7 @@ public class ModDamageEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return !(other instanceof DamageEnchantment) && !(other instanceof ModDamageEnchantment);
+        return !(other instanceof DamageEnchantment) && !(other instanceof ExtraDamageEnchantment);
     }
 
     @Override

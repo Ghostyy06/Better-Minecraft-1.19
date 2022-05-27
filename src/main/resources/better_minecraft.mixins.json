@@ -17,10 +17,10 @@
     "EnchantingTableBlockMixin",
     "ArmorStandEntityMixin",
     "MinecraftClientMixin",
-    "MobSpawnerLogicMixin",
-    "InGameHudMixin"
+    "MobSpawnerLogicMixin"
   ],
   "client": [
+    "InGameHudMixin"
   ],
   "injectors": {
     "defaultRequire": 1

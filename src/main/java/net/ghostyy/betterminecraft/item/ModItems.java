@@ -1,10 +1,12 @@
 package net.ghostyy.betterminecraft.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.ghostyy.betterminecraft.Better_Minecraft;
 import net.ghostyy.betterminecraft.item.custom.ModAxeItem;
 import net.ghostyy.betterminecraft.item.custom.ModHoeItem;
 import net.ghostyy.betterminecraft.item.custom.ModPickaxeItem;
+import net.ghostyy.betterminecraft.item.custom.TriBowItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -65,6 +67,10 @@ public class ModItems {
     public static final Item VOIDSTEEL_BOOTS = registerItem("voidsteel_boots",
             new ArmorItem(ModArmorMaterials.VOIDSTEEL, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ItemGroup.COMBAT).fireproof()));
+
+    //Other Gear
+    public static final Item TRI_BOW = registerItem("tri_bow",
+            new TriBowItem(new FabricItemSettings().group(ItemGroup.COMBAT).maxDamage(425).fireproof()));
 
     //Registries
     private static Item registerItem(String name, Item item) {

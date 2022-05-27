@@ -37,6 +37,7 @@
   "item.better_minecraft.reinforced_netherite_chestplate": "Reinforced Netherite Chestplate",
   "item.better_minecraft.reinforced_netherite_leggings": "Reinforced Netherite Leggings",
   "item.better_minecraft.reinforced_netherite_boots": "Reinforced Netherite Boots",
+  "item.better_minecraft.tri_bow": "Tri-Bow",
 
   "block.better_minecraft.voidsteel_debris": "Voidsteel Debris",
   "block.better_minecraft.gilded_netherite_debris": "Gilded Debris",
@@ -64,5 +65,6 @@
 
   "enchantment.better_minecraft.bane_of_illagers": "Bane of Illagers",
   "enchantment.better_minecraft.poison_blade": "Poison Blade",
-  "enchantment.better_minecraft.withering_edge": "Withering Edge"
+  "enchantment.better_minecraft.withering_edge": "Withering Edge",
+  "enchantment.better_minecraft.snipe": "Snipe"
 }
