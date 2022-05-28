@@ -35,6 +35,7 @@ public class Better_Minecraft implements ModInitializer {
 				stacks.add(new ItemStack(Blocks.JIGSAW));
 				stacks.add(new ItemStack(Items.DEBUG_STICK));
 				stacks.add(new ItemStack(Items.LIGHT));
+				stacks.add(new ItemStack(Blocks.SCULK_SENSOR));
 				stacks.add(new ItemStack(Items.BUNDLE));
 			})
 			.build();

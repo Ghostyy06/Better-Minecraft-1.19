@@ -15,7 +15,6 @@
     "VanishingCurseMixin",
     "EnchantingTableBlockMixin",
     "ArmorStandEntityMixin",
-    "MinecraftClientMixin",
     "MobSpawnerLogicMixin"
   ],
   "client": [
