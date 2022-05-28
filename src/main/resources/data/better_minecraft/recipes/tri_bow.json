@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " VS",
+    "VBS",
+    " VS"
+  ],
+  "key": {
+    "V": {
+      "item": "better_minecraft:voidsteel_ingot"
+    },
+    "B": {
+      "item": "minecraft:bow"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "better_minecraft:tri_bow"
+  }
+}

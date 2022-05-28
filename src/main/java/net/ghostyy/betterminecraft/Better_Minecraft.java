@@ -43,6 +43,7 @@ public class Better_Minecraft implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		//Sets up all registries and worldgen
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();

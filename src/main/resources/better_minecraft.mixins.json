@@ -13,7 +13,6 @@
     "KnockbackMixin",
     "BindingCurseMixin",
     "VanishingCurseMixin",
-    "DungeonFeatureMixin",
     "EnchantingTableBlockMixin",
     "ArmorStandEntityMixin",
     "MinecraftClientMixin",

@@ -2,6 +2,7 @@ package net.ghostyy.betterminecraft.item.custom;
 
 import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.ghostyy.betterminecraft.enchantment.ModEnchantments;
+import net.ghostyy.betterminecraft.item.ModItems;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
@@ -15,6 +16,7 @@ import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import org.spongepowered.asm.util.PrettyPrinter;
 
@@ -127,8 +129,24 @@ public class TriBowItem extends BowItem {
 
     public float getExtraArrowPitch(World world) {
         float r;
-        if((r = world.getRandom().nextInt(10) - (snipeLevel * 2)) >= 0) {
+        if((r = world.getRandom().nextInt(10) - ((float)snipeLevel * 2)) >= 0) {
             return r;
-        } return snipeLevel >= 3 ? r : 5;
+        } return snipeLevel >= 3f ? r : 5f;
+    }
+
+    public static void getTriBowPredicates() {
+        FabricModelPredicateProviderRegistry.register(ModItems.TRI_BOW, new Identifier("pull"), (itemStack, clientWorld, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return livingEntity.getActiveItem() != itemStack ? 0.0F : (itemStack.getMaxUseTime() - livingEntity.getItemUseTimeLeft()) / 20.0F;
+        });
+
+        FabricModelPredicateProviderRegistry.register(ModItems.TRI_BOW, new Identifier("pulling"), (itemStack, clientWorld, livingEntity, seed) -> {
+            if (livingEntity == null) {
+                return 0.0F;
+            }
+            return livingEntity.isUsingItem() && livingEntity.getActiveItem() == itemStack ? 1.0F : 0.0F;
+        });
     }
 }
