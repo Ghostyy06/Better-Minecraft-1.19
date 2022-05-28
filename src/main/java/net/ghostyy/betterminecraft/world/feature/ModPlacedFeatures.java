@@ -17,11 +17,12 @@ public class ModPlacedFeatures {
 
     //Voidsteel Debris
     public static final RegistryEntry<PlacedFeature> VOIDSTEEL_DEBRIS = PlacedFeatures.register("voidsteel_debris",
-            ModConfiguredFeatures.VOIDSTEEL_DEBRIS, SquarePlacementModifier.of(),
-            HeightRangePlacementModifier.trapezoid(YOffset.fixed(24), YOffset.fixed(40)), BiomePlacementModifier.of());
+            ModConfiguredFeatures.VOIDSTEEL_DEBRIS, ModOreFeatures.modifiersWithCount(4,
+                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(24), YOffset.aboveBottom(24))));
+
     public static final RegistryEntry<PlacedFeature> VOIDSTEEL_DEBRIS_SMALL = PlacedFeatures.register("voidsteel_debris_small",
-            ModConfiguredFeatures.VOIDSTEEL_DEBRIS_SMALL, SquarePlacementModifier.of(),
-            PlacedFeatures.EIGHT_ABOVE_AND_BELOW_RANGE, BiomePlacementModifier.of());
+            ModConfiguredFeatures.VOIDSTEEL_DEBRIS_SMALL, ModOreFeatures.modifiersWithCount(4,
+                    PlacedFeatures.EIGHT_ABOVE_AND_BELOW_RANGE));
 
     //End Obsidian
     public static final RegistryEntry<PlacedFeature> OBSIDIAN_CLUMP = PlacedFeatures.register("end_obsidian_clump",
