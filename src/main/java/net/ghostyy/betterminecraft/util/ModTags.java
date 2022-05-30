@@ -25,7 +25,6 @@ public class ModTags {
 
     public static class Items {
 
-
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(Registry.ITEM_KEY ,new Identifier(Better_Minecraft.MODID, name));
         }

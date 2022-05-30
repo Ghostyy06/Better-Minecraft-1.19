@@ -15,7 +15,9 @@
     "VanishingCurseMixin",
     "EnchantingTableBlockMixin",
     "ArmorStandEntityMixin",
-    "MobSpawnerLogicMixin"
+    "MobSpawnerLogicMixin",
+    "CrossbowItemMixin",
+    "PowerEnchantmentMixin"
   ],
   "client": [
     "InGameHudMixin"
