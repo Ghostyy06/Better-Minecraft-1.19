@@ -73,7 +73,6 @@ public class TriBowItem extends BowItem {
             if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW))) {
                 persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
             }
-            persistentProjectileEntity.setNoGravity(true);
             world.spawnEntity(persistentProjectileEntity);
         }
         if (!world.isClient) {
@@ -95,7 +94,6 @@ public class TriBowItem extends BowItem {
                 persistentProjectileEntity.setOnFireFor(100);
             }
             persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
-            persistentProjectileEntity.setNoGravity(true);
             world.spawnEntity(persistentProjectileEntity);
         }
         if (!world.isClient) {
@@ -117,7 +115,6 @@ public class TriBowItem extends BowItem {
                 persistentProjectileEntity.setOnFireFor(100);
             }
             persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
-            persistentProjectileEntity.setNoGravity(true);
             world.spawnEntity(persistentProjectileEntity);
         }
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 2.0f, 1.0f / (world.getRandom().nextFloat() * 0.4f + 1.2f) + f * 0.5f);

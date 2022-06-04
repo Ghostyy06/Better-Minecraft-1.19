@@ -17,7 +17,8 @@
     "ArmorStandEntityMixin",
     "MobSpawnerLogicMixin",
     "CrossbowItemMixin",
-    "PowerEnchantmentMixin"
+    "PowerEnchantmentMixin",
+    "RavagerEntityMixin"
   ],
   "client": [
     "InGameHudMixin"
