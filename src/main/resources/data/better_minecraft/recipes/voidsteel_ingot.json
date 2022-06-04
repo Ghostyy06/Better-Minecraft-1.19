@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "VDV",
-    "DSD",
-    "VDV"
+    "VEV",
+    "ESE",
+    "VEV"
   ],
   "key": {
     "V": {
       "item": "better_minecraft:voidsteel_scrap"
     },
-    "D": {
-      "item": "minecraft:diamond"
+    "E": {
+      "item": "minecraft:echo_shard"
     },
     "S": {
-      "item": "minecraft:nether_star"
+      "item": "better_minecraft:sculk_core"
     }
   },
   "result": {

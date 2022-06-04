@@ -16,6 +16,7 @@
   "item.better_minecraft.amethyst_shovel": "Amethyst Shovel",
   "item.better_minecraft.amethyst_hoe": "Amethyst Hoe",
   "item.better_minecraft.tri_bow": "Tri-Bow",
+  "item.better_minecraft.sculk_core": "Sculk Core",
 
   "block.better_minecraft.voidsteel_debris": "Voidsteel Debris",
   "block.better_minecraft.voidsteel_block": "Voidsteel Block",
@@ -41,5 +42,6 @@
   "enchantment.better_minecraft.poison_blade": "Poison Blade",
   "enchantment.better_minecraft.withering_edge": "Withering Edge",
   "enchantment.better_minecraft.snipe": "Snipe",
-  "enchantment.better_minecraft.life_steal": "Life Steal"
+  "enchantment.better_minecraft.life_steal": "Life Steal",
+  "enchantment.better_minecraft.warden_slayer": "Warden Slayer"
 }

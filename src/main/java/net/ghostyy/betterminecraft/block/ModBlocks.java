@@ -9,68 +9,61 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
     //Voidsteel
-    public static final Block VOIDSTEEL_DEBRIS = registerFireproofBlock("voidsteel_debris",
+    public static final Block VOIDSTEEL_DEBRIS = registerBlock("voidsteel_debris",
             new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(40.0f,1600.0f)
-                    .requiresTool().sounds(ModSounds.VOIDSTEEL_DEBRIS)), ItemGroup.BUILDING_BLOCKS);
-    public static final Block VOIDSTEEL_BLOCK = registerFireproofBlock("voidsteel_block",
+                    .requiresTool().sounds(ModSounds.VOIDSTEEL_DEBRIS)), ItemGroup.BUILDING_BLOCKS, true);
+    public static final Block VOIDSTEEL_BLOCK = registerBlock("voidsteel_block",
             new Block(FabricBlockSettings.of(Material.METAL).mapColor(MapColor.BLACK).strength(60.0f,1600.0f)
-                    .requiresTool().sounds(ModSounds.VOIDSTEEL_BLOCK)), ItemGroup.BUILDING_BLOCKS);
+                    .requiresTool().sounds(ModSounds.VOIDSTEEL_BLOCK)), ItemGroup.BUILDING_BLOCKS, true);
 
     //Calcite
     public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
-            new StairsBlock(Blocks.CALCITE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.BUILDING_BLOCKS);
+            new StairsBlock(Blocks.CALCITE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.BUILDING_BLOCKS, false);
     public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.BUILDING_BLOCKS);
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.BUILDING_BLOCKS, false);
     public static final Block CALCITE_WALL = registerBlock("calcite_wall",
-            new WallBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.DECORATIONS);
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CALCITE)), ItemGroup.DECORATIONS, false);
 
     //Bookshelves
     public static final Block BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
     public static final Block SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
     public static final Block JUNGLE_BOOKSHELF = registerBlock("jungle_bookshelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
     public static final Block ACACIA_BOOKSHELF = registerBlock("acacia_bookshelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
     public static final Block DARK_OAK_BOOKSHELF = registerBlock("dark_oak_bookshelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
     public static final Block CRIMSON_BOOKSHELF = registerBlock("crimson_bookshelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
     public static final Block WARPED_BOOKSHELF = registerBlock("warped_bookshelf",
-            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS);
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
 
     //Redstone
     public static final Block IRON_BUTTON = registerBlock("iron_button",
-            new ModButtonBlock(true, FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE);
+            new ModButtonBlock(true, FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE, false);
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
-            new ModButtonBlock(false, FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE);
+            new ModButtonBlock(false, FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE, false);
 
 
 
-    private static Block registerBlock(String name, Block block, ItemGroup group) {
-        registerBlockItem(name, block, group);
+    private static Block registerBlock(String name, Block block, ItemGroup group, boolean fireproof) {
+        registerBlockItem(name, block, group, fireproof);
         return Registry.register(Registry.BLOCK, new Identifier(Better_Minecraft.MODID, name), block);
     }
-    private static Item registerBlockItem(String name, Block block, ItemGroup group) {
-        return Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
+    private static Item registerBlockItem(String name, Block block, ItemGroup group, boolean fireproof) {
+        return fireproof ?
+                Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
+                new BlockItem(block, new FabricItemSettings().group(group).fireproof())) :
+                Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
-    }
-
-    private static Block registerFireproofBlock(String name, Block block, ItemGroup group) {
-        registerFireproofBlockItem(name, block, group);
-        return Registry.register(Registry.BLOCK, new Identifier(Better_Minecraft.MODID, name), block);
-    }
-    private static Item registerFireproofBlockItem(String name, Block block, ItemGroup group) {
-        return Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
-                new BlockItem(block, new FabricItemSettings().group(group).fireproof()));
     }
     public static void registerModBlocks() {
         Better_Minecraft.LOGGER.info("Registering mod blocks for " + Better_Minecraft.MODID);

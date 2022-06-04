@@ -1,10 +1,7 @@
 package net.ghostyy.betterminecraft.enchantment;
 
 import net.ghostyy.betterminecraft.Better_Minecraft;
-import net.ghostyy.betterminecraft.enchantment.custom.DOTEnchantment;
-import net.ghostyy.betterminecraft.enchantment.custom.ExtraDamageEnchantment;
-import net.ghostyy.betterminecraft.enchantment.custom.LifeStealEnchantment;
-import net.ghostyy.betterminecraft.enchantment.custom.SnipeEnchantment;
+import net.ghostyy.betterminecraft.enchantment.custom.*;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.Identifier;
