@@ -6,6 +6,7 @@ import net.ghostyy.betterminecraft.block.ModBlocks;
 import net.ghostyy.betterminecraft.enchantment.ModEnchantments;
 import net.ghostyy.betterminecraft.item.ModItems;
 import net.ghostyy.betterminecraft.world.gen.ModWorldGeneration;
+import net.ghostyy.betterminecraft.world.structure.ModStructures;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -47,5 +48,6 @@ public class Better_Minecraft implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();
 		ModEnchantments.registerModEnchantments();
+		ModStructures.registerModStructureFeatures();
 	}
 }
