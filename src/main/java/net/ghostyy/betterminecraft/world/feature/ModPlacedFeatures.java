@@ -28,12 +28,6 @@ public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> OBSIDIAN_CLUMP = PlacedFeatures.register("end_obsidian_clump",
             ModConfiguredFeatures.OBSIDIAN_CLUMP, ModOreFeatures.modifiersWithCount(4,
                     HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));
-    public static final RegistryEntry<PlacedFeature> OBSIDIAN_SHATTERED = PlacedFeatures.register("end_obsidian_shattered",
-            ModConfiguredFeatures.OBSIDIAN_SHATTERED, ModOreFeatures.modifiersWithCount(16,
-                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));
-    public static final RegistryEntry<PlacedFeature> CRYING_OBSIDIAN_CLUMP = PlacedFeatures.register("end_crying_obsidian_clump",
-            ModConfiguredFeatures.CRYING_OBSIDIAN_CLUMP, ModOreFeatures.modifiersWithCount(4,
-                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));
     public static final RegistryEntry<PlacedFeature> CRYING_OBSIDIAN_SHATTERED = PlacedFeatures.register("end_crying_obsidian_shattered",
             ModConfiguredFeatures.CRYING_OBSIDIAN_SHATTERED, ModOreFeatures.modifiersWithCount(16,
                     HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));

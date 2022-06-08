@@ -38,18 +38,6 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> OBSIDIAN_CLUMP =
             ConfiguredFeatures.register("end_obsidian_clump", Feature.ORE,
                     new OreFeatureConfig(END_OBSIDIAN_CLUMP,64, 0.0f));
-    public static final List<OreFeatureConfig.Target> END_OBSIDIAN_SHATTERED = List.of(
-            OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
-                    Blocks.OBSIDIAN.getDefaultState()));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> OBSIDIAN_SHATTERED =
-            ConfiguredFeatures.register("end_obsidian_shattered", Feature.SCATTERED_ORE,
-                    new OreFeatureConfig(END_OBSIDIAN_SHATTERED,16, 0.0f));
-    public static final List<OreFeatureConfig.Target> END_CRYING_OBSIDIAN_CLUMP = List.of(
-            OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
-                    Blocks.CRYING_OBSIDIAN.getDefaultState()));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CRYING_OBSIDIAN_CLUMP =
-            ConfiguredFeatures.register("end_crying_obsidian_clump", Feature.ORE,
-                    new OreFeatureConfig(END_CRYING_OBSIDIAN_CLUMP,64, 0.0f));
     public static final List<OreFeatureConfig.Target> END_CRYING_OBSIDIAN_SHATTERED = List.of(
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
                     Blocks.CRYING_OBSIDIAN.getDefaultState()));
