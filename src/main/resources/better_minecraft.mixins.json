@@ -19,7 +19,10 @@
     "CrossbowItemMixin",
     "PowerMixin",
     "RavagerEntityMixin",
-    "FoliageColorsMixin"
+    "FoliageColorsMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "RecipeBookWidgetMixin"
   ],
   "client": [
     "InGameHudMixin"
