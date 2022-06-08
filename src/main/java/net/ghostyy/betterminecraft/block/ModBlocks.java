@@ -7,7 +7,6 @@ import net.ghostyy.betterminecraft.block.custom.ModButtonBlock;
 import net.ghostyy.betterminecraft.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -52,18 +51,18 @@ public class ModBlocks {
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
             new ModButtonBlock(false, FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE, false);
 
-
-
     private static Block registerBlock(String name, Block block, ItemGroup group, boolean fireproof) {
         registerBlockItem(name, block, group, fireproof);
         return Registry.register(Registry.BLOCK, new Identifier(Better_Minecraft.MODID, name), block);
     }
-    private static Item registerBlockItem(String name, Block block, ItemGroup group, boolean fireproof) {
-        return fireproof ?
-                Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
-                new BlockItem(block, new FabricItemSettings().group(group).fireproof())) :
-                Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
-                new BlockItem(block, new FabricItemSettings().group(group)));
+    private static void registerBlockItem(String name, Block block, ItemGroup group, boolean fireproof) {
+        if (fireproof) {
+            Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
+                    new BlockItem(block, new FabricItemSettings().group(group).fireproof()));
+        } else {
+            Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name),
+                    new BlockItem(block, new FabricItemSettings().group(group)));
+        }
     }
     public static void registerModBlocks() {
         Better_Minecraft.LOGGER.info("Registering mod blocks for " + Better_Minecraft.MODID);
