@@ -8,10 +8,7 @@ import net.minecraft.world.gen.carver.ConfiguredCarver;
 import net.minecraft.world.gen.carver.RavineCarver;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
-import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
-import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 
 public class ModPlacedFeatures {
 
@@ -31,6 +28,11 @@ public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> CRYING_OBSIDIAN_SHATTERED = PlacedFeatures.register("end_crying_obsidian_shattered",
             ModConfiguredFeatures.CRYING_OBSIDIAN_SHATTERED, ModOreFeatures.modifiersWithCount(16,
                     HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.belowTop(0))));
+
+    //Nether Blackstone
+    public static final RegistryEntry<PlacedFeature> BLACKSTONE = PlacedFeatures.register("nether_blackstone",
+            ModConfiguredFeatures.BLACKSTONE, ModOreFeatures.modifiersWithCount(8,
+                    HeightRangePlacementModifier.uniform(YOffset.aboveBottom(24), YOffset.belowTop(0))));
 
     //Init
     public static void registerModPlacedFeatures() {

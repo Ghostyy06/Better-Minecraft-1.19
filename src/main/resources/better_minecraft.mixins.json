@@ -19,7 +19,8 @@
     "CrossbowItemMixin",
     "PowerMixin",
     "RavagerEntityMixin",
-    "FoliageColorsMixin"
+    "FoliageColorsMixin",
+    "LeavesBlockMixin"
   ],
   "client": [
     "InGameHudMixin"

@@ -7,11 +7,11 @@ import net.minecraft.block.Blocks;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.ConfiguredFeatures;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.blockpredicate.BlockPredicate;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
 
 import java.util.List;
 
@@ -44,6 +44,12 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CRYING_OBSIDIAN_SHATTERED =
             ConfiguredFeatures.register("end_crying_obsidian_shattered", Feature.SCATTERED_ORE,
                     new OreFeatureConfig(END_CRYING_OBSIDIAN_SHATTERED,16, 0.0f));
+
+    //Nether Blackstone
+    public static final RegistryEntry<ConfiguredFeature<DiskFeatureConfig, ?>> BLACKSTONE =
+            ConfiguredFeatures.register("nether_blackstone", Feature.DISK,
+                    new DiskFeatureConfig(PredicatedStateProvider.of(Blocks.BLACKSTONE), BlockPredicate.matchingBlocks(Blocks.NETHERRACK),
+                            UniformIntProvider.create(3, 6), 1));
 
     public static void registerConfiguredFeatures() {
         Better_Minecraft.LOGGER.info("Regsitering configured features for " + Better_Minecraft.MODID);
