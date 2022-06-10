@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_minecraft:andesite_redstone_ore",
+    "better_minecraft:diorite_redstone_ore",
+    "better_minecraft:granite_redstone_ore",
+    "better_minecraft:tuff_redstone_ore",
+    "minecraft:deepslate_redstone_ore",
+    "minecraft:redstone_ore"
+  ]
+}

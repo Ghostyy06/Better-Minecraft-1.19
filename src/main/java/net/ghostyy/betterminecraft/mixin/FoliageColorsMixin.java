@@ -10,12 +10,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class FoliageColorsMixin {
 
     @Inject(method = "getSpruceColor", at = @At("RETURN"))
-    private static int getSpruceColor(CallbackInfoReturnable info) {
+    private static int getSpruceColor(CallbackInfoReturnable<Integer> info) {
         return 2795314;
     }
 
     @Inject(method = "getBirchColor", at = @At("RETURN"))
-    private static int getBirchColor(CallbackInfoReturnable info) {
+    private static int getBirchColor(CallbackInfoReturnable<Integer> info) {
         return 4304452;
     }
 }

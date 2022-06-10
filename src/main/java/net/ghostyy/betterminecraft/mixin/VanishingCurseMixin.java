@@ -10,15 +10,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class VanishingCurseMixin {
 
     @Inject(method = "isTreasure", at = @At("RETURN"))
-    public boolean isTreasure(CallbackInfoReturnable ci) {
+    public boolean isTreasure(CallbackInfoReturnable<Boolean> ci) {
         return false;
     }
     @Inject(method = "getMinPower", at = @At("RETURN"))
-    public int getMinPower(int level, CallbackInfoReturnable ci) {
+    public int getMinPower(int level, CallbackInfoReturnable<Integer> ci) {
         return 0;
     }
     @Inject(method = "getMaxPower", at = @At("RETURN"))
-    public int getMaxPower(int level, CallbackInfoReturnable ci) {
+    public int getMaxPower(int level, CallbackInfoReturnable<Integer> ci) {
         return 50;
     }
 }

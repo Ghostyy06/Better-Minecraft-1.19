@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class FrostWalkerMixin {
 
     @Inject(method = "getMaxLevel", at = @At("RETURN"))
-    public int getMaxLevel(CallbackInfoReturnable ci) {
+    public int getMaxLevel(CallbackInfoReturnable<Integer> ci) {
         return 3;
     }
 }

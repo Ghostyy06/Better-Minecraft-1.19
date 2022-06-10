@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": [
+      { "model": "better_minecraft:block/andesite_redstone_ore_off" }
+    ],
+    "lit=true": [
+      { "model": "better_minecraft:block/andesite_redstone_ore" }
+    ]
+  }
+}

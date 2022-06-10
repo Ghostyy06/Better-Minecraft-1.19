@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class ArmorStandEntityMixin {
 
     @Inject(method = "shouldShowArms", at = @At("RETURN"))
-    public boolean shouldShowArms(CallbackInfoReturnable info) {
+    public boolean shouldShowArms(CallbackInfoReturnable<Boolean> info) {
         return true;
     }
 }

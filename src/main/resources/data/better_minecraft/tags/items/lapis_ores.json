@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better_minecraft:andesite_lapis_ore",
+    "better_minecraft:diorite_lapis_ore",
+    "better_minecraft:granite_lapis_ore",
+    "better_minecraft:tuff_lapis_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:lapis_ore"
+  ]
+}

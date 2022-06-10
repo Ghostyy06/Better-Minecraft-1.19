@@ -21,6 +21,8 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item SCULK_CORE = registerItem("sculk_core",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
+    public static final Item ECHO_STRING = registerItem("echo_string",
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 
     //Voidsteel Tools
     public static final Item VOIDSTEEL_SWORD = registerItem("voidsteel_sword",

@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class EnchantingTableBlockMixin {
 
     @Inject(method = "canAccessBookshelf", at = @At("RETURN"))
-    private static boolean canAccessBookshelf(World world, BlockPos tablePos, BlockPos bookshelfOffset, CallbackInfoReturnable info) {
+    private static boolean canAccessBookshelf(World world, BlockPos tablePos, BlockPos bookshelfOffset, CallbackInfoReturnable<Boolean> info) {
         return world.getBlockState(tablePos.add(bookshelfOffset)).isIn(ModTags.Blocks.BOOKSHELVES) && world.isAir(tablePos.add(bookshelfOffset.getX() / 2, bookshelfOffset.getY(), bookshelfOffset.getZ() / 2));
     }
 

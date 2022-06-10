@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "better_minecraft:block/diorite_iron_ore"
+      }
+    ]
+  }
+}
