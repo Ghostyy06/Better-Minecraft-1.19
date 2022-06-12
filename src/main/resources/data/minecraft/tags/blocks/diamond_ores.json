@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "better_minecraft:andesite_diamond_ore",
-    "better_minecraft:diorite_diamond_ore",
-    "better_minecraft:granite_diamond_ore",
-    "better_minecraft:tuff_diamond_ore"
-  ]
-}

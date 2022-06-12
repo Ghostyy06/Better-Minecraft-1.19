@@ -13,6 +13,7 @@ import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
 
+import javax.swing.text.html.HTML;
 import java.util.List;
 
 public class ModConfiguredFeatures {
@@ -36,20 +37,28 @@ public class ModConfiguredFeatures {
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
                     Blocks.OBSIDIAN.getDefaultState()));
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> OBSIDIAN_CLUMP =
-            ConfiguredFeatures.register("end_obsidian_clump", Feature.ORE,
+            ConfiguredFeatures.register("obsidian_clump", Feature.ORE,
                     new OreFeatureConfig(END_OBSIDIAN_CLUMP,64, 0.0f));
     public static final List<OreFeatureConfig.Target> END_CRYING_OBSIDIAN_SHATTERED = List.of(
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
                     Blocks.CRYING_OBSIDIAN.getDefaultState()));
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CRYING_OBSIDIAN_SHATTERED =
-            ConfiguredFeatures.register("end_crying_obsidian_shattered", Feature.SCATTERED_ORE,
+            ConfiguredFeatures.register("crying_obsidian_shattered", Feature.SCATTERED_ORE,
                     new OreFeatureConfig(END_CRYING_OBSIDIAN_SHATTERED,16, 0.0f));
 
     //Nether Blackstone
     public static final RegistryEntry<ConfiguredFeature<DiskFeatureConfig, ?>> BLACKSTONE =
-            ConfiguredFeatures.register("nether_blackstone", Feature.DISK,
+            ConfiguredFeatures.register("blackstone_disk", Feature.DISK,
                     new DiskFeatureConfig(PredicatedStateProvider.of(Blocks.BLACKSTONE), BlockPredicate.matchingBlocks(Blocks.NETHERRACK),
                             UniformIntProvider.create(3, 6), 1));
+    //Soul Magma
+    public static final List<OreFeatureConfig.Target> NETHER_SOUL_MAGMA = List.of(
+            OreFeatureConfig.createTarget(new TagMatchRuleTest(BlockTags.WITHER_SUMMON_BASE_BLOCKS),
+                    ModBlocks.SOUL_MAGMA.getDefaultState()));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> SOUL_MAGMA =
+            ConfiguredFeatures.register("soul_magma", Feature.ORE,
+                    new OreFeatureConfig(NETHER_SOUL_MAGMA,33, 0.0f));
+
 
     public static void registerConfiguredFeatures() {
         Better_Minecraft.LOGGER.info("Regsitering configured features for " + Better_Minecraft.MODID);

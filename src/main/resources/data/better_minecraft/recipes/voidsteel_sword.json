@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "better_minecraft:reinforced_netherite_sword"
+    "item": "minecraft:netherite_sword"
   },
   "addition": {
     "item": "better_minecraft:voidsteel_ingot"

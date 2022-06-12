@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "better_minecraft:andesite_gold_ore",
-    "better_minecraft:diorite_gold_ore",
-    "better_minecraft:granite_gold_ore",
-    "better_minecraft:tuff_gold_ore"
-  ]
-}

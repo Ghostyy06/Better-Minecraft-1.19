@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "better_minecraft:block/soul_magma"
+      }
+    ]
+  }
+}

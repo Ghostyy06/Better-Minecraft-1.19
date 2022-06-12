@@ -2,6 +2,7 @@ package net.ghostyy.betterminecraft.world.gen;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.ghostyy.betterminecraft.block.ModBlocks;
 import net.ghostyy.betterminecraft.util.ModTags;
 import net.ghostyy.betterminecraft.world.feature.ModPlacedFeatures;
 import net.minecraft.world.gen.GenerationStep;
@@ -19,5 +20,7 @@ public class ModFeatureGeneration {
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.CRYING_OBSIDIAN_SHATTERED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.NETHER_WASTES),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BLACKSTONE.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.SOUL_SAND_VALLEY),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SOUL_MAGMA.getKey().get());
     }
 }
