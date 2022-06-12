@@ -15,11 +15,11 @@ public class ModPlacedFeatures {
 
     //Voidsteel Debris
     public static final RegistryEntry<PlacedFeature> VOIDSTEEL_DEBRIS = PlacedFeatures.register("voidsteel_debris",
-            ModConfiguredFeatures.VOIDSTEEL_DEBRIS, ModOreFeatures.modifiersWithCount(4,
-                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(24), YOffset.aboveBottom(24))));
+            ModConfiguredFeatures.VOIDSTEEL_DEBRIS, ModOreFeatures.modifiersWithCount(3,
+                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(16), YOffset.aboveBottom(32))));
 
     public static final RegistryEntry<PlacedFeature> VOIDSTEEL_DEBRIS_SMALL = PlacedFeatures.register("voidsteel_debris_small",
-            ModConfiguredFeatures.VOIDSTEEL_DEBRIS_SMALL, ModOreFeatures.modifiersWithCount(4,
+            ModConfiguredFeatures.VOIDSTEEL_DEBRIS_SMALL, ModOreFeatures.modifiersWithCount(3,
                     PlacedFeatures.EIGHT_ABOVE_AND_BELOW_RANGE));
 
     //End Obsidian

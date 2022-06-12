@@ -37,6 +37,7 @@ public class ModTags {
 
         public static final TagKey<Biome> NETHER_WASTES = createCommonTag("nether_wastes");
         public static final TagKey<Biome> SOUL_SAND_VALLEY = createCommonTag("soul_sand_valley");
+        public static final TagKey<Biome> VOIDSTEEL_GENERATES_IN = createTag("voidsteel_generates_in");
 
         private static TagKey<Biome> createTag(String name) {
             return TagKey.of(Registry.BIOME_KEY ,new Identifier(Better_Minecraft.MODID, name));

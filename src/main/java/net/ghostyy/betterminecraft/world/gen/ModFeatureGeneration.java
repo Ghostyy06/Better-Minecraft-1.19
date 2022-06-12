@@ -10,9 +10,9 @@ import net.minecraft.world.gen.carver.ConfiguredCarvers;
 
 public class ModFeatureGeneration {
     public static void generateFeatures() {
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.VOIDSTEEL_GENERATES_IN),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.VOIDSTEEL_DEBRIS.getKey().get());
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.VOIDSTEEL_GENERATES_IN),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.VOIDSTEEL_DEBRIS_SMALL.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.OBSIDIAN_CLUMP.getKey().get());

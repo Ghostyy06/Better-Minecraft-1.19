@@ -24,13 +24,13 @@ public class ModConfiguredFeatures {
                     ModBlocks.VOIDSTEEL_DEBRIS.getDefaultState()));
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> VOIDSTEEL_DEBRIS =
             ConfiguredFeatures.register("voidsteel_debris", Feature.SCATTERED_ORE,
-                    new OreFeatureConfig(END_VOIDSTEEL_DEBRIS,5, 1.0f));
+                    new OreFeatureConfig(END_VOIDSTEEL_DEBRIS,4, 1.0f));
     public static final List<OreFeatureConfig.Target> END_VOIDSTEEL_DEBRIS_SMALL = List.of(
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
                     ModBlocks.VOIDSTEEL_DEBRIS.getDefaultState()));
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> VOIDSTEEL_DEBRIS_SMALL =
             ConfiguredFeatures.register("voidsteel_debris_small", Feature.SCATTERED_ORE,
-                    new OreFeatureConfig(END_VOIDSTEEL_DEBRIS_SMALL,4, 1.0f));
+                    new OreFeatureConfig(END_VOIDSTEEL_DEBRIS_SMALL,2, 1.0f));
 
     //End Obsidian
     public static final List<OreFeatureConfig.Target> END_OBSIDIAN_CLUMP = List.of(
