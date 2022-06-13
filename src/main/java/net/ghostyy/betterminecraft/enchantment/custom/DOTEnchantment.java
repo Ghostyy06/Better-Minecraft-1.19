@@ -42,9 +42,9 @@ public class DOTEnchantment extends Enchantment {
         if (target instanceof LivingEntity) {
             switch (typeIndex) {
                 case 0: ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.POISON,
-                        20*2*level, level-1, true, false, false));
+                        20*2*level, 1, true, false, false));
                 case 1: ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER,
-                        20*2*level, level-1, true, false, false));
+                        20*2*level, 1, true, false, false));
                 default:
             }
         }
