@@ -2,19 +2,16 @@ package net.ghostyy.betterminecraft;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
 import net.ghostyy.betterminecraft.block.ModBlocks;
 import net.ghostyy.betterminecraft.enchantment.ModEnchantments;
 import net.ghostyy.betterminecraft.item.ModItems;
 import net.ghostyy.betterminecraft.world.gen.ModWorldGeneration;
 import net.ghostyy.betterminecraft.world.structure.ModStructures;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.item.*;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

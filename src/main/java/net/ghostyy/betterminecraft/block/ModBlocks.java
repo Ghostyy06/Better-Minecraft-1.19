@@ -47,6 +47,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
     public static final Block WARPED_BOOKSHELF = registerBlock("warped_bookshelf",
             new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
+    public static final Block MANGROVE_BOOKSHELF = registerBlock("mangrove_bookshelf",
+            new Block(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)), ItemGroup.DECORATIONS, false);
 
     //Generic Blocks
     public static final Block SOUL_MAGMA = registerBlock("soul_magma",

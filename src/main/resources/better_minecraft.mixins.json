@@ -18,6 +18,7 @@
     "MobSpawnerLogicMixin",
     "CrossbowItemMixin",
     "PowerMixin",
+    "PowerMixin",
     "RavagerEntityMixin",
     "FoliageColorsMixin",
     "LeavesBlockMixin"
