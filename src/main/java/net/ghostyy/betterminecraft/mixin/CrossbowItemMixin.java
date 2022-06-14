@@ -36,8 +36,8 @@ public abstract class CrossbowItemMixin {
         }
         persistentProjectileEntity.setSound(SoundEvents.ITEM_CROSSBOW_HIT);
         persistentProjectileEntity.setShotFromCrossbow(true);
-        if(getPowerLevel(crossbow) > 0) {
-            persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)getPowerLevel(crossbow) * 0.5 + 0.5);
+        if(getPiercingLevel(crossbow) > 0) {
+            persistentProjectileEntity.setDamage((persistentProjectileEntity.getDamage() - 1.0) + (double) getPiercingLevel(crossbow) * 0.5 + 0.5);
         }
         int i = EnchantmentHelper.getLevel(Enchantments.PIERCING, crossbow);
         if (i > 0) {
@@ -50,7 +50,7 @@ public abstract class CrossbowItemMixin {
         return EnchantmentHelper.getLevel(ModEnchantments.SNIPE, stack);
     }
 
-    private static int getPowerLevel(ItemStack stack) {
-        return EnchantmentHelper.getLevel(Enchantments.POWER, stack);
+    private static int getPiercingLevel(ItemStack stack) {
+        return EnchantmentHelper.getLevel(Enchantments.PIERCING, stack);
     }
 }

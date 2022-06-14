@@ -17,7 +17,6 @@
     "ArmorStandEntityMixin",
     "MobSpawnerLogicMixin",
     "CrossbowItemMixin",
-    "PowerMixin",
     "RavagerEntityMixin",
     "FoliageColorsMixin",
     "LeavesBlockMixin"
