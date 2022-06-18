@@ -33,7 +33,7 @@ public class ModSounds {
 
 
     private static SoundEvent registerSoundEvent(String name) {
-        Identifier id = new Identifier(Better_Minecraft.MODID, name);
+        Identifier id = new Identifier(Better_Minecraft.MOD_ID, name);
         return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
     }
 }

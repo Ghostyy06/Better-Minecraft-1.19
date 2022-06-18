@@ -4,7 +4,6 @@ import net.ghostyy.betterminecraft.Better_Minecraft;
 import net.ghostyy.betterminecraft.block.ModBlocks;
 import net.ghostyy.betterminecraft.util.ModTags;
 import net.minecraft.block.Blocks;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -13,7 +12,6 @@ import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.stateprovider.PredicatedStateProvider;
 
-import javax.swing.text.html.HTML;
 import java.util.List;
 
 public class ModConfiguredFeatures {
@@ -61,6 +59,6 @@ public class ModConfiguredFeatures {
 
 
     public static void registerConfiguredFeatures() {
-        Better_Minecraft.LOGGER.info("Regsitering configured features for " + Better_Minecraft.MODID);
+        Better_Minecraft.LOGGER.info("Regsitering configured features for " + Better_Minecraft.MOD_ID);
     }
 }

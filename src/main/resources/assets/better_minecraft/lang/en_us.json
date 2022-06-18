@@ -18,6 +18,8 @@
   "item.better_minecraft.tri_bow": "Tri-Bow",
   "item.better_minecraft.sculk_core": "Sculk Core",
   "item.better_minecraft.echo_string": "Echo String",
+  "item.better_minecraft.ender_ghast_spawn_egg": "Ender Ghast Spawn Egg",
+  "item.better_minecraft.ender_ghast_tear": "Ender Ghast Tear",
 
   "block.better_minecraft.voidsteel_debris": "Voidsteel Debris",
   "block.better_minecraft.voidsteel_block": "Voidsteel Block",
@@ -82,5 +84,7 @@
   "enchantment.better_minecraft.withering_edge": "Withering Edge",
   "enchantment.better_minecraft.snipe": "Snipe",
   "enchantment.better_minecraft.life_steal": "Life Steal",
-  "enchantment.better_minecraft.warden_slayer": "Warden Slayer"
+  "enchantment.better_minecraft.warden_slayer": "Warden Slayer",
+
+  "entity.better_minecraft.ender_ghast": "Ender Ghast"
 }

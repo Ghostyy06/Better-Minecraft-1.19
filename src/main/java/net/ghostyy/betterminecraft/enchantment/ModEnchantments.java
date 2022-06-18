@@ -21,10 +21,10 @@ public class ModEnchantments {
             new LifeStealEnchantment(Enchantment.Rarity.RARE, EquipmentSlot.MAINHAND));
 
     private static Enchantment register(String name, Enchantment enchantment) {
-        return Registry.register(Registry.ENCHANTMENT, new Identifier(Better_Minecraft.MODID, name), enchantment);
+        return Registry.register(Registry.ENCHANTMENT, new Identifier(Better_Minecraft.MOD_ID, name), enchantment);
     }
 
     public static void registerModEnchantments() {
-        Better_Minecraft.LOGGER.info("Registering mod enchantments for " + Better_Minecraft.MODID);
+        Better_Minecraft.LOGGER.info("Registering mod enchantments for " + Better_Minecraft.MOD_ID);
     }
 }

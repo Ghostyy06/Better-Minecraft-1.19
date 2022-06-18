@@ -16,7 +16,7 @@ public class ModTags {
         public static TagKey<Block> BOOKSHELVES = createCommonTag("bookshelves");
 
         private static TagKey<Block> createTag(String name) {
-            return TagKey.of(Registry.BLOCK_KEY ,new Identifier(Better_Minecraft.MODID, name));
+            return TagKey.of(Registry.BLOCK_KEY ,new Identifier(Better_Minecraft.MOD_ID, name));
         }
         private static TagKey<Block> createCommonTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY ,new Identifier("c", name));
@@ -26,7 +26,7 @@ public class ModTags {
     public static class Items {
 
         private static TagKey<Item> createTag(String name) {
-            return TagKey.of(Registry.ITEM_KEY ,new Identifier(Better_Minecraft.MODID, name));
+            return TagKey.of(Registry.ITEM_KEY ,new Identifier(Better_Minecraft.MOD_ID, name));
         }
         private static TagKey<Item> createCommonTag(String name) {
             return TagKey.of(Registry.ITEM_KEY ,new Identifier("c", name));
@@ -40,7 +40,7 @@ public class ModTags {
         public static final TagKey<Biome> VOIDSTEEL_GENERATES_IN = createTag("voidsteel_generates_in");
 
         private static TagKey<Biome> createTag(String name) {
-            return TagKey.of(Registry.BIOME_KEY ,new Identifier(Better_Minecraft.MODID, name));
+            return TagKey.of(Registry.BIOME_KEY ,new Identifier(Better_Minecraft.MOD_ID, name));
         }
         private static TagKey<Biome> createCommonTag(String name) {
             return TagKey.of(Registry.BIOME_KEY ,new Identifier("c", name));

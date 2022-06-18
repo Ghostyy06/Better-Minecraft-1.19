@@ -19,10 +19,12 @@
     "CrossbowItemMixin",
     "RavagerEntityMixin",
     "FoliageColorsMixin",
-    "LeavesBlockMixin"
+    "LeavesBlockMixin",
+    "BrewingRecipeRegistryMixin"
   ],
   "client": [
-    "InGameHudMixin"
+    "InGameHudMixin",
+    "IntegratedServerLoaderMixin"
   ],
   "injectors": {
     "defaultRequire": 1

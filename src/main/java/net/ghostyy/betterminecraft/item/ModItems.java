@@ -1,8 +1,8 @@
 package net.ghostyy.betterminecraft.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.ghostyy.betterminecraft.Better_Minecraft;
+import net.ghostyy.betterminecraft.entity.ModEntities;
 import net.ghostyy.betterminecraft.item.custom.ModAxeItem;
 import net.ghostyy.betterminecraft.item.custom.ModHoeItem;
 import net.ghostyy.betterminecraft.item.custom.ModPickaxeItem;
@@ -22,6 +22,8 @@ public class ModItems {
     public static final Item SCULK_CORE = registerItem("sculk_core",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item ECHO_STRING = registerItem("echo_string",
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
+    public static final Item ENDER_GHAST_TEAR = registerItem("ender_ghast_tear",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 
     //Voidsteel Tools
@@ -76,11 +78,16 @@ public class ModItems {
     public static final Item TRI_BOW = registerItem("tri_bow",
             new TriBowItem(new FabricItemSettings().group(ItemGroup.COMBAT).maxDamage(425).fireproof()));
 
+    //Spawn Eggs
+    public static final Item ENDER_GHAST_SPAWN_EGG = registerItem("ender_ghast_spawn_egg",
+            new SpawnEggItem(ModEntities.ENDER_GHAST, 0x141414, 16711905,
+                    new FabricItemSettings().group(ItemGroup.MISC)));
+
     //Registries
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MODID, name), item);
+        return Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MOD_ID, name), item);
     }
     public static void registerModItems() {
-        Better_Minecraft.LOGGER.info("Registering mod items for " + Better_Minecraft.MODID);
+        Better_Minecraft.LOGGER.info("Registering mod items for " + Better_Minecraft.MOD_ID);
     }
 }

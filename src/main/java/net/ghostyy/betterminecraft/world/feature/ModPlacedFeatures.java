@@ -3,10 +3,6 @@ package net.ghostyy.betterminecraft.world.feature;
 import net.ghostyy.betterminecraft.Better_Minecraft;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.YOffset;
-import net.minecraft.world.gen.carver.Carver;
-import net.minecraft.world.gen.carver.ConfiguredCarver;
-import net.minecraft.world.gen.carver.RavineCarver;
-import net.minecraft.world.gen.feature.ConfiguredFeatures;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.*;
@@ -41,7 +37,7 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.uniform(YOffset.fixed(27), YOffset.belowTop(0))));
     //Init
     public static void registerModPlacedFeatures() {
-        Better_Minecraft.LOGGER.info("Registering mod placed features for " + Better_Minecraft.MODID);
+        Better_Minecraft.LOGGER.info("Registering mod placed features for " + Better_Minecraft.MOD_ID);
     }
 
 }

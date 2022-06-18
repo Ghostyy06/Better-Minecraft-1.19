@@ -12,7 +12,7 @@ public class ModStructures {
     public static StructureType<?> VARIABLE_HEIGHT_STRUCTURE;
 
     public static void registerModStructureFeatures() {
-        VARIABLE_HEIGHT_STRUCTURE = register(new Identifier(Better_Minecraft.MODID, "variable_height"), VariableHeightStructure.CODEC);
+        VARIABLE_HEIGHT_STRUCTURE = register(new Identifier(Better_Minecraft.MOD_ID, "variable_height"), VariableHeightStructure.CODEC);
     }
     // Helper method to register since compiler will complain about typing if we did () -> SkyStructures.CODEC directly.
     private static <S extends Structure> StructureType<S> register(Identifier id, Codec<S> codec) {

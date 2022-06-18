@@ -3,8 +3,11 @@ package net.ghostyy.betterminecraft;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.ghostyy.betterminecraft.block.ModBlocks;
+import net.ghostyy.betterminecraft.effects.potions.ModPotions;
 import net.ghostyy.betterminecraft.enchantment.ModEnchantments;
+import net.ghostyy.betterminecraft.entity.ModEntities;
 import net.ghostyy.betterminecraft.item.ModItems;
+import net.ghostyy.betterminecraft.world.gen.ModEntitySpawns;
 import net.ghostyy.betterminecraft.world.gen.ModWorldGeneration;
 import net.ghostyy.betterminecraft.world.structure.ModStructures;
 import net.minecraft.block.Blocks;
@@ -17,11 +20,10 @@ import org.slf4j.LoggerFactory;
 
 public class Better_Minecraft implements ModInitializer {
 
-	public static final String MODID = "better_minecraft";
-	public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
+	public static final String MOD_ID = "better_minecraft";
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	//Item Group (Since it isn't loaded anywhere else)
-	public static final ItemGroup CREATIVE_UTILS = FabricItemGroupBuilder.create(new Identifier(Better_Minecraft.MODID, "creative_utils"))
+	public static final ItemGroup CREATIVE_UTILS = FabricItemGroupBuilder.create(new Identifier(Better_Minecraft.MOD_ID, "creative_utils"))
 			.icon(() -> new ItemStack(Blocks.REPEATING_COMMAND_BLOCK))
 			.appendItems(stacks -> {
 				stacks.add(new ItemStack(Blocks.COMMAND_BLOCK));
@@ -36,6 +38,7 @@ public class Better_Minecraft implements ModInitializer {
 				stacks.add(new ItemStack(Blocks.JIGSAW));
 				stacks.add(new ItemStack(Items.DEBUG_STICK));
 				stacks.add(new ItemStack(Items.LIGHT));
+				stacks.add(new ItemStack(Blocks.SCULK_SENSOR));
 				stacks.add(new ItemStack(Items.BUNDLE));
 			})
 			.build();
@@ -49,5 +52,8 @@ public class Better_Minecraft implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModEnchantments.registerModEnchantments();
 		ModStructures.registerModStructureFeatures();
+		ModEntitySpawns.addEntitySpawns();
+		ModEntities.registerEntityAttributes();
+		ModPotions.registerPotions();
 	}
 }
