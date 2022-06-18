@@ -28,7 +28,7 @@ import java.util.EnumSet;
 
 public class EnderGhastEntity extends GhastEntity {
 
-    private int explosionStrength = 7;
+    private int explosionStrength = 5;
     public EnderGhastEntity(EntityType<? extends GhastEntity> entityType, World world) {
         super(entityType, world);
         this.experiencePoints = 10;
@@ -148,9 +148,9 @@ public class EnderGhastEntity extends GhastEntity {
         public void start() {
             Random random = this.ghast.getRandom();
             double d = this.ghast.getX() + (double)((random.nextFloat() * 2.0f - 1.0f) * 16.0f);
-            double e = this.ghast.getY() + (double)((random.nextFloat() * 2.0f - 1.0f) * 16.0f);
+            double e = this.ghast.getY() + (double)((random.nextFloat() * 2.0f - 1.0f) * 4.0f);
             double f = this.ghast.getZ() + (double)((random.nextFloat() * 2.0f - 1.0f) * 16.0f);
-            this.ghast.getMoveControl().moveTo(d, e, f, 1.0);
+            this.ghast.getMoveControl().moveTo(d, e, f, 2.0);
         }
     }
 
@@ -234,7 +234,7 @@ public class EnderGhastEntity extends GhastEntity {
                 if (this.cooldown == 10 && !this.ghast.isSilent()) {
                     world.syncWorldEvent(null, WorldEvents.GHAST_WARNS, this.ghast.getBlockPos(), 0);
                 }
-                if (this.cooldown == 30) {
+                if (this.cooldown == 20) {
                     double e = 4.0;
                     Vec3d vec3d = this.ghast.getRotationVec(1.0f);
                     double f = (livingEntity.getX() - (this.ghast.getX() + vec3d.x * 4.0)) * e;
