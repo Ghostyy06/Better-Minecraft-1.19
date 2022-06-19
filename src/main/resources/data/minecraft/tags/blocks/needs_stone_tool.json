@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "better_minecraft:andesite_copper_ore",
+    "better_minecraft:andesite_iron_ore",
+    "better_minecraft:andesite_lapis_ore",
+    
+    "better_minecraft:diorite_copper_ore",
+    "better_minecraft:diorite_iron_ore",
+    "better_minecraft:diorite_lapis_ore",
+
+    "better_minecraft:granite_copper_ore",
+    "better_minecraft:granite_iron_ore",
+    "better_minecraft:granite_lapis_ore",
+
+    "better_minecraft:tuff_copper_ore",
+    "better_minecraft:tuff_iron_ore",
+    "better_minecraft:tuff_lapis_ore"
+  ]
+}
