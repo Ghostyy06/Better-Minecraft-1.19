@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "better_minecraft:acacia_crafting_table"
+          "name": "better_minecraft:warped_crafting_table"
         }
       ],
       "conditions": [
