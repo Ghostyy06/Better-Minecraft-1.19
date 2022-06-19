@@ -26,6 +26,12 @@
   "block.better_minecraft.calcite_stairs": "Calcite Stairs",
   "block.better_minecraft.calcite_slab": "Calcite Slab",
   "block.better_minecraft.calcite_wall": "Calcite Wall",
+
+  "block.better_minecraft.iron_button": "Iron Button",
+  "block.better_minecraft.gold_button": "Gold Button",
+  "block.better_minecraft.soul_magma": "Soul Magma Block",
+
+
   "block.minecraft.bookshelf": "Oak Bookshelf",
   "block.better_minecraft.birch_bookshelf": "Birch Bookshelf",
   "block.better_minecraft.spruce_bookshelf": "Spruce Bookshelf",
@@ -35,9 +41,16 @@
   "block.better_minecraft.crimson_bookshelf": "Crimson Bookshelf",
   "block.better_minecraft.warped_bookshelf": "Warped Bookshelf",
   "block.better_minecraft.mangrove_bookshelf": "Mangrove Bookshelf",
-  "block.better_minecraft.iron_button": "Iron Button",
-  "block.better_minecraft.gold_button": "Gold Button",
-  "block.better_minecraft.soul_magma": "Soul Magma Block",
+
+  "block.minecraft.crafting_table": "Oak Crafting Table",
+  "block.better_minecraft.birch_crafting_table": "Birch Crafting Table",
+  "block.better_minecraft.spruce_crafting_table": "Spruce Crafting Table",
+  "block.better_minecraft.jungle_crafting_table": "Jungle Crafting Table",
+  "block.better_minecraft.acacia_crafting_table": "Acacia Crafting Table",
+  "block.better_minecraft.dark_oak_crafting_table": "Dark Oak Crafting Table",
+  "block.better_minecraft.mangrove_crafting_table": "Mangrove Crafting Table",
+  "block.better_minecraft.crimson_crafting_table": "Crimson Crafting Table",
+  "block.better_minecraft.warped_crafting_table": "Warped Crafting Table",
   
   "block.better_minecraft.tuff_coal_ore": "Tuff Coal Ore",
   "block.better_minecraft.tuff_iron_ore": "Tuff Iron Ore",

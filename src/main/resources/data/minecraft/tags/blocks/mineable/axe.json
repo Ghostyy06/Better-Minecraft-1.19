@@ -2,6 +2,14 @@
   "replace": false,
   "values": [
     "#minecraft:beds",
-    "#better_minecraft:bookshelves"
+    "#better_minecraft:bookshelves",
+    "better_minecraft:birch_crafting_table",
+    "better_minecraft:spruce_crafting_table",
+    "better_minecraft:jungle_crafting_table",
+    "better_minecraft:acacia_crafting_table",
+    "better_minecraft:dark_oak_crafting_table",
+    "better_minecraft:mangrove_crafting_table",
+    "better_minecraft:crimson_crafting_table",
+    "better_minecraft:warped_crafting_table"
   ]
 }

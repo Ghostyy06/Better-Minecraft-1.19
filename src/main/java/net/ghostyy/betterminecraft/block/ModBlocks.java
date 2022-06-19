@@ -132,6 +132,24 @@ public class ModBlocks {
     public static final Block TUFF_REDSTONE_ORE = registerOreVariant("tuff", "redstone",
             new RedstoneOreBlock(FabricBlockSettings.copyOf(Blocks.REDSTONE_ORE)));
 
+    //Crafting table variants
+    public static final Block BIRCH_CRAFTING_TABLE = registerBlock("birch_crafting_table",
+            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, false);
+    public static final Block SPRUCE_CRAFTING_TABLE = registerBlock("spruce_crafting_table",
+            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, false);
+    public static final Block JUNGLE_CRAFTING_TABLE = registerBlock("jungle_crafting_table",
+            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, false);
+    public static final Block ACACIA_CRAFTING_TABLE = registerBlock("acacia_crafting_table",
+            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, false);
+    public static final Block DARK_OAK_CRAFTING_TABLE = registerBlock("dark_oak_crafting_table",
+            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, false);
+    public static final Block MANGROVE_CRAFTING_TABLE = registerBlock("mangrove_crafting_table",
+            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, false);
+    public static final Block CRIMSON_CRAFTING_TABLE = registerBlock("crimson_crafting_table",
+            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, false);
+    public static final Block WARPED_CRAFTING_TABLE = registerBlock("warped_crafting_table",
+            new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, false);
+
     //Registries
     private static Block registerBlock(String name, Block block, ItemGroup group, boolean fireproof) {
         registerBlockItem(name, block, group, fireproof);
