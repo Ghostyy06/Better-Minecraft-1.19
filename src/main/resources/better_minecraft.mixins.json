@@ -21,7 +21,8 @@
     "FoliageColorsMixin",
     "LeavesBlockMixin",
     "BrewingRecipeRegistryMixin",
-    "CraftingScreenHandlerMixin"
+    "CraftingScreenHandlerMixin",
+    "MendingMixin"
   ],
   "client": [
     "InGameHudMixin",

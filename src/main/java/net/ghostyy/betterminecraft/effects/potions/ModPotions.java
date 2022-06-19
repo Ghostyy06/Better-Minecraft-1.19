@@ -29,7 +29,7 @@ public class ModPotions {
                 new Potion(baseName, new StatusEffectInstance(effect, duration, amplifier)));
     }
     public static void registerPotions() {
-        Better_Minecraft.LOGGER.info("Registering mod potions for " + Better_Minecraft.MOD_ID);
+        Better_Minecraft.LOGGER.info("Registering potions for " + Better_Minecraft.MOD_ID);
         registerPotionRecipes();
     }
     private static void registerPotionRecipes() {

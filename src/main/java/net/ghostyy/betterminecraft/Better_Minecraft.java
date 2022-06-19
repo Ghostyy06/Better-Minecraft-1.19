@@ -26,10 +26,6 @@ public class Better_Minecraft implements ModInitializer {
 
 	public static final String MOD_ID = "better_minecraft";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static List<Pair<String, String[]>> woodTypes = Lists.newArrayList(
-	);
-
-
 
 	public static final ItemGroup CREATIVE_UTILS = FabricItemGroupBuilder.create(new Identifier(Better_Minecraft.MOD_ID, "creative_utils"))
 			.icon(() -> new ItemStack(Blocks.REPEATING_COMMAND_BLOCK))
@@ -63,15 +59,5 @@ public class Better_Minecraft implements ModInitializer {
 		ModEntitySpawns.addEntitySpawns();
 		ModEntities.registerEntityAttributes();
 		ModPotions.registerPotions();
-
-
-		woodTypes.add(Pair.of("birch", new String[0]));
-		woodTypes.add(Pair.of("spruce", new String[0]));
-		woodTypes.add(Pair.of("jungle", new String[0]));
-		woodTypes.add(Pair.of("acacia", new String[0]));
-		woodTypes.add(Pair.of("dark_oak", new String[0]));
-		woodTypes.add(Pair.of("mangrove", new String[0]));
-		woodTypes.add(Pair.of("crimson", new String[0]));
-		woodTypes.add(Pair.of("warped", new String[0]));
 	}
 }

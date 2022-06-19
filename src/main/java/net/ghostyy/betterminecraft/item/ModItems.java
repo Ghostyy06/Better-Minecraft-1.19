@@ -86,6 +86,6 @@ public class ModItems {
         return Registry.register(Registry.ITEM, new Identifier(Better_Minecraft.MOD_ID, name), item);
     }
     public static void registerModItems() {
-        Better_Minecraft.LOGGER.info("Registering mod items for " + Better_Minecraft.MOD_ID);
+        Better_Minecraft.LOGGER.info("Registering items for " + Better_Minecraft.MOD_ID);
     }
 }

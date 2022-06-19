@@ -37,7 +37,7 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.uniform(YOffset.fixed(27), YOffset.belowTop(0))));
     //Init
     public static void registerModPlacedFeatures() {
-        Better_Minecraft.LOGGER.info("Registering mod placed features for " + Better_Minecraft.MOD_ID);
+        Better_Minecraft.LOGGER.info("Registering placed features for " + Better_Minecraft.MOD_ID);
     }
 
 }

@@ -173,7 +173,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        Better_Minecraft.LOGGER.info("Registering mod blocks for " + Better_Minecraft.MOD_ID);
+        Better_Minecraft.LOGGER.info("Registering blocks for " + Better_Minecraft.MOD_ID);
     }
     private static boolean always(BlockState state, BlockView world, BlockPos pos) {
         return true;

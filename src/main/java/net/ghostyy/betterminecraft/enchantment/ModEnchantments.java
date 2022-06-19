@@ -19,6 +19,6 @@ public class ModEnchantments {
     }
 
     public static void registerModEnchantments() {
-        Better_Minecraft.LOGGER.info("Registering mod enchantments for " + Better_Minecraft.MOD_ID);
+        Better_Minecraft.LOGGER.info("Registering enchantments for " + Better_Minecraft.MOD_ID);
     }
 }
