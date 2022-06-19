@@ -7,6 +7,7 @@ import net.ghostyy.betterminecraft.block.custom.ModButtonBlock;
 import net.ghostyy.betterminecraft.block.custom.SoulMagmaBlock;
 import net.ghostyy.betterminecraft.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
