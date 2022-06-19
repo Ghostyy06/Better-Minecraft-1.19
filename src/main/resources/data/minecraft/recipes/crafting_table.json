@@ -3,7 +3,7 @@
   "group": "crafting_tables",
   "key": {
     "#": {
-      "item": "minecraft:crimson_planks"
+      "item": "minecraft:oak_planks"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
     "##"
   ],
   "result": {
-    "item": "better_minecraft:crimson_crafting_table"
+    "item": "minecraft:crafting_table"
   }
 }
