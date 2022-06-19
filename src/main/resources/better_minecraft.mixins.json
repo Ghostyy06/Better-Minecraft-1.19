@@ -20,7 +20,8 @@
     "RavagerEntityMixin",
     "FoliageColorsMixin",
     "LeavesBlockMixin",
-    "BrewingRecipeRegistryMixin"
+    "BrewingRecipeRegistryMixin",
+    "CraftingScreenHandlerMixin"
   ],
   "client": [
     "InGameHudMixin",

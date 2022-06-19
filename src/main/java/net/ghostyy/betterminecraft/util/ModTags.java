@@ -15,6 +15,8 @@ public class ModTags {
         public static TagKey<Block> BASE_STONE_END = createTag("base_stone_end");
         public static TagKey<Block> BOOKSHELVES = createCommonTag("bookshelves");
 
+        public static TagKey<Block> CRAFTING_TABLES = createCommonTag("crafting_tables");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY ,new Identifier(Better_Minecraft.MOD_ID, name));
         }

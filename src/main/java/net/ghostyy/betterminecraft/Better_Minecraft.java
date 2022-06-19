@@ -1,5 +1,6 @@
 package net.ghostyy.betterminecraft;
 
+import com.google.common.collect.Lists;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.ghostyy.betterminecraft.block.ModBlocks;
@@ -15,13 +16,20 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
+import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
 
 public class Better_Minecraft implements ModInitializer {
 
 	public static final String MOD_ID = "better_minecraft";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static List<Pair<String, String[]>> woodTypes = Lists.newArrayList(
+	);
+
+
 
 	public static final ItemGroup CREATIVE_UTILS = FabricItemGroupBuilder.create(new Identifier(Better_Minecraft.MOD_ID, "creative_utils"))
 			.icon(() -> new ItemStack(Blocks.REPEATING_COMMAND_BLOCK))
@@ -55,5 +63,15 @@ public class Better_Minecraft implements ModInitializer {
 		ModEntitySpawns.addEntitySpawns();
 		ModEntities.registerEntityAttributes();
 		ModPotions.registerPotions();
+
+
+		woodTypes.add(Pair.of("birch", new String[0]));
+		woodTypes.add(Pair.of("spruce", new String[0]));
+		woodTypes.add(Pair.of("jungle", new String[0]));
+		woodTypes.add(Pair.of("acacia", new String[0]));
+		woodTypes.add(Pair.of("dark_oak", new String[0]));
+		woodTypes.add(Pair.of("mangrove", new String[0]));
+		woodTypes.add(Pair.of("crimson", new String[0]));
+		woodTypes.add(Pair.of("warped", new String[0]));
 	}
 }
