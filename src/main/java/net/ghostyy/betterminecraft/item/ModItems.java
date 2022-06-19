@@ -19,8 +19,6 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item VOIDSTEEL_INGOT = registerItem("voidsteel_ingot",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
-    public static final Item SCULK_CORE = registerItem("sculk_core",
-            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item ECHO_STRING = registerItem("echo_string",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item ENDER_GHAST_TEAR = registerItem("ender_ghast_tear",
@@ -28,16 +26,16 @@ public class ModItems {
 
     //Voidsteel Tools
     public static final Item VOIDSTEEL_SWORD = registerItem("voidsteel_sword",
-            new SwordItem(ModToolMaterials.VOIDSTEEL, 3, -2.0f,
+            new SwordItem(ModToolMaterials.VOIDSTEEL, 3, -2.4f,
                     new FabricItemSettings().group(ItemGroup.COMBAT).fireproof()));
     public static final Item VOIDSTEEL_PICKAXE = registerItem("voidsteel_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.VOIDSTEEL, 1, -2.4f,
+            new ModPickaxeItem(ModToolMaterials.VOIDSTEEL, 1, -3.0f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static final Item VOIDSTEEL_AXE = registerItem("voidsteel_axe",
-            new ModAxeItem(ModToolMaterials.VOIDSTEEL, 5, -2.6f,
+            new ModAxeItem(ModToolMaterials.VOIDSTEEL, 5, -2.8f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static final Item VOIDSTEEL_SHOVEL = registerItem("voidsteel_shovel",
-            new ShovelItem(ModToolMaterials.VOIDSTEEL, 1.5f, -2.6f,
+            new ShovelItem(ModToolMaterials.VOIDSTEEL, 1.5f, -3.0f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static final Item VOIDSTEEL_HOE = registerItem("voidsteel_hoe",
             new ModHoeItem(ModToolMaterials.VOIDSTEEL, -5, 0f,

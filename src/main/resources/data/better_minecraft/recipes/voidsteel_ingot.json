@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "VEV",
-    "ESE",
+    "ENE",
     "VEV"
   ],
   "key": {
@@ -12,8 +12,8 @@
     "E": {
       "item": "better_minecraft:ender_ghast_tear"
     },
-    "S": {
-      "item": "better_minecraft:sculk_core"
+    "N": {
+      "item": "minecraft:netherite_ingot"
     }
   },
   "result": {
