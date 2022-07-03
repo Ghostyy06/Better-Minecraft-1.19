@@ -19,10 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.ghostyy.betterminecraft.Better_Minecraft"
+      "net.ghostyy.better_minecraft.Better_Minecraft"
     ],
     "client": [
-      "net.ghostyy.betterminecraft.Better_Minecraft_Client"
+      "net.ghostyy.better_minecraft.Better_Minecraft_Client"
     ]
   },
   "mixins": [

@@ -15,17 +15,15 @@
   "item.better_minecraft.amethyst_axe": "Amethyst Axe",
   "item.better_minecraft.amethyst_shovel": "Amethyst Shovel",
   "item.better_minecraft.amethyst_hoe": "Amethyst Hoe",
-  "item.better_minecraft.tri_bow": "Tri-Bow",
-  "item.better_minecraft.sculk_core": "Sculk Core",
-  "item.better_minecraft.echo_string": "Echo String",
   "item.better_minecraft.ender_ghast_spawn_egg": "Ender Ghast Spawn Egg",
-  "item.better_minecraft.ender_ghast_tear": "Ender Ghast Tear",
+  "item.better_minecraft.shulker_pearl": "Shulker Pearl",
 
   "block.better_minecraft.voidsteel_debris": "Voidsteel Debris",
   "block.better_minecraft.voidsteel_block": "Voidsteel Block",
   "block.better_minecraft.calcite_stairs": "Calcite Stairs",
   "block.better_minecraft.calcite_slab": "Calcite Slab",
   "block.better_minecraft.calcite_wall": "Calcite Wall",
+  "block.better_minecraft.reinforced_wood": "Reinforced Wood",
 
   "block.better_minecraft.iron_button": "Iron Button",
   "block.better_minecraft.gold_button": "Gold Button",
@@ -41,62 +39,17 @@
   "block.better_minecraft.warped_bookshelf": "Warped Bookshelf",
   "block.better_minecraft.mangrove_bookshelf": "Mangrove Bookshelf",
 
-  "block.minecraft.crafting_table": "Oak Crafting Table",
-  "block.better_minecraft.birch_crafting_table": "Birch Crafting Table",
-  "block.better_minecraft.spruce_crafting_table": "Spruce Crafting Table",
-  "block.better_minecraft.jungle_crafting_table": "Jungle Crafting Table",
-  "block.better_minecraft.acacia_crafting_table": "Acacia Crafting Table",
-  "block.better_minecraft.dark_oak_crafting_table": "Dark Oak Crafting Table",
-  "block.better_minecraft.crimson_crafting_table": "Crimson Crafting Table",
-  "block.better_minecraft.warped_crafting_table": "Warped Crafting Table",
-  "block.better_minecraft.mangrove_crafting_table": "Mangrove Crafting Table",
-  
-  "block.better_minecraft.tuff_coal_ore": "Tuff Coal Ore",
-  "block.better_minecraft.tuff_iron_ore": "Tuff Iron Ore",
-  "block.better_minecraft.tuff_copper_ore": "Tuff Copper Ore",
-  "block.better_minecraft.tuff_gold_ore": "Tuff Gold Ore",
-  "block.better_minecraft.tuff_lapis_ore": "Tuff Lapis Lazuli Ore",
-  "block.better_minecraft.tuff_redstone_ore": "Tuff Redstone Ore",
-  "block.better_minecraft.tuff_diamond_ore": "Tuff Diamond Ore",
-  "block.better_minecraft.tuff_emerald_ore": "Tuff Emerald Ore",
-
-  "block.better_minecraft.granite_coal_ore": "Granite Coal Ore",
-  "block.better_minecraft.granite_iron_ore": "Granite Iron Ore",
-  "block.better_minecraft.granite_copper_ore": "Granite Copper Ore",
-  "block.better_minecraft.granite_gold_ore": "Granite Gold Ore",
-  "block.better_minecraft.granite_lapis_ore": "Granite Lapis Lazuli Ore",
-  "block.better_minecraft.granite_redstone_ore": "Granite Redstone Ore",
-  "block.better_minecraft.granite_diamond_ore": "Granite Diamond Ore",
-  "block.better_minecraft.granite_emerald_ore": "Granite Emerald Ore",
-
-  "block.better_minecraft.andesite_coal_ore": "Andesite Coal Ore",
-  "block.better_minecraft.andesite_iron_ore": "Andesite Iron Ore",
-  "block.better_minecraft.andesite_copper_ore": "Andesite Copper Ore",
-  "block.better_minecraft.andesite_gold_ore": "Andesite Gold Ore",
-  "block.better_minecraft.andesite_lapis_ore": "Andesite Lapis Lazuli Ore",
-  "block.better_minecraft.andesite_redstone_ore": "Andesite Redstone Ore",
-  "block.better_minecraft.andesite_diamond_ore": "Andesite Diamond Ore",
-  "block.better_minecraft.andesite_emerald_ore": "Andesite Emerald Ore",
-
-  "block.better_minecraft.diorite_coal_ore": "Diorite Coal Ore",
-  "block.better_minecraft.diorite_iron_ore": "Diorite Iron Ore",
-  "block.better_minecraft.diorite_copper_ore": "Diorite Copper Ore",
-  "block.better_minecraft.diorite_gold_ore": "Diorite Gold Ore",
-  "block.better_minecraft.diorite_lapis_ore": "Diorite Lapis Lazuli Ore",
-  "block.better_minecraft.diorite_redstone_ore": "Diorite Redstone Ore",
-  "block.better_minecraft.diorite_diamond_ore": "Diorite Diamond Ore",
-  "block.better_minecraft.diorite_emerald_ore": "Diorite Emerald Ore",
-
   "subtitles.item.armor.equip_voidsteel": "Voidsteel Armor Clanks",
 
   "itemGroup.better_minecraft.creative_utils": "Creative Utils",
 
   "enchantment.better_minecraft.bane_of_illagers": "Bane of Illagers",
-  "enchantment.better_minecraft.poison_blade": "Poison Blade",
-  "enchantment.better_minecraft.withering_edge": "Withering Edge",
   "enchantment.better_minecraft.snipe": "Snipe",
-  "enchantment.better_minecraft.life_steal": "Life Steal",
-  "enchantment.better_minecraft.warden_slayer": "Warden Slayer",
 
-  "entity.better_minecraft.ender_ghast": "Ender Ghast"
+  "entity.better_minecraft.ender_ghast": "Ender Ghast",
+
+  "item.minecraft.potion.effect.wither": "Potion of Wither",
+  "item.minecraft.splash_potion.effect.wither": "Splash Potion of Wither",
+  "item.minecraft.lingering_potion.effect.wither": "Lingering Potion of Wither",
+  "item.minecraft.tipped_arrow.effect.wither": "Arrow of Wither"
 }

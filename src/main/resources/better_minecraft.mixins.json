@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.ghostyy.betterminecraft.mixin",
+  "package": "net.ghostyy.better_minecraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "VoidsteelArmorMixin",
@@ -21,12 +21,10 @@
     "FoliageColorsMixin",
     "LeavesBlockMixin",
     "BrewingRecipeRegistryMixin",
-    "CraftingScreenHandlerMixin",
-    "MendingMixin"
+    "BowItemMixin"
   ],
   "client": [
-    "InGameHudMixin",
-    "IntegratedServerLoaderMixin"
+    "InGameHudMixin"
   ],
   "injectors": {
     "defaultRequire": 1

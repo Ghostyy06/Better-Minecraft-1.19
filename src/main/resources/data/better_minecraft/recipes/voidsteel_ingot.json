@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "VEV",
-    "ENE",
-    "VEV"
+    "VSV",
+    "SNS",
+    "VSV"
   ],
   "key": {
     "V": {
       "item": "better_minecraft:voidsteel_scrap"
     },
-    "E": {
-      "item": "better_minecraft:ender_ghast_tear"
+    "S": {
+      "item": "better_minecraft:shulker_pearl"
     },
     "N": {
       "item": "minecraft:netherite_ingot"
