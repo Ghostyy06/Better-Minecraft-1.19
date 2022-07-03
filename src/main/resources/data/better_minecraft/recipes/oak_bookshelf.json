@@ -8,13 +8,13 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:barrier"
+      "item": "minecraft:oak_planks"
     },
     "X": {
-      "item": "minecraft:barrier"
+      "item": "minecraft:book"
     }
   },
   "result": {
-    "item": "minecraft:air"
+    "item": "minecraft:bookshelf"
   }
 }

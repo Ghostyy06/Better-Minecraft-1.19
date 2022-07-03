@@ -6,7 +6,6 @@ import net.ghostyy.better_minecraft.block.ModBlocks;
 import net.ghostyy.better_minecraft.effects.potions.ModPotions;
 import net.ghostyy.better_minecraft.enchantment.ModEnchantments;
 import net.ghostyy.better_minecraft.item.ModItems;
-import net.ghostyy.better_minecraft.world.gen.ModEntitySpawns;
 import net.ghostyy.better_minecraft.world.gen.ModWorldGeneration;
 import net.ghostyy.better_minecraft.world.structure.ModStructures;
 import net.minecraft.block.Blocks;
@@ -50,7 +49,6 @@ public class Better_Minecraft implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModEnchantments.registerModEnchantments();
 		ModStructures.registerModStructureFeatures();
-		ModEntitySpawns.addEntitySpawns();
 		ModPotions.registerPotions();
 	}
 }

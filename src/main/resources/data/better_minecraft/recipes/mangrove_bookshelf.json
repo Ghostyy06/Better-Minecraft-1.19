@@ -8,13 +8,13 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:barrier"
+      "item": "minecraft:mangrove_planks"
     },
     "X": {
-      "item": "minecraft:barrier"
+      "item": "minecraft:book"
     }
   },
   "result": {
-    "item": "minecraft:air"
+    "item": "better_minecraft:mangrove_bookshelf"
   }
 }
