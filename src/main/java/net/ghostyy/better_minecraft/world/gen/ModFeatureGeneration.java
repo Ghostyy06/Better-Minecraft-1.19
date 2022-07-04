@@ -20,5 +20,8 @@ public class ModFeatureGeneration {
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BLACKSTONE.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.SOUL_SAND_VALLEY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SOUL_MAGMA.getKey().get());
+
+        //BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
+                //GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.NETHER_DUNGEON.getKey().get());
     }
 }

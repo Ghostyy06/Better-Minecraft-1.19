@@ -11,8 +11,6 @@
     "ProtectionMixin",
     "PiercingMixin",
     "KnockbackMixin",
-    "BindingCurseMixin",
-    "VanishingCurseMixin",
     "EnchantingTableBlockMixin",
     "ArmorStandEntityMixin",
     "MobSpawnerLogicMixin",

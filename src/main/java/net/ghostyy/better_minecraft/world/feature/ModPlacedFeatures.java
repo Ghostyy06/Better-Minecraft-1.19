@@ -5,6 +5,7 @@ import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
+import net.minecraft.world.gen.feature.UndergroundConfiguredFeatures;
 import net.minecraft.world.gen.placementmodifier.*;
 
 public class ModPlacedFeatures {
@@ -35,6 +36,11 @@ public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> SOUL_MAGMA = PlacedFeatures.register("soul_magma",
             ModConfiguredFeatures.SOUL_MAGMA, ModOreFeatures.modifiersWithCount(4,
                     HeightRangePlacementModifier.uniform(YOffset.fixed(27), YOffset.belowTop(0))));
+
+    //Nether Dungeon
+    public static final RegistryEntry<PlacedFeature> NETHER_DUNGEON = PlacedFeatures.register("nether_dungeon", ModConfiguredFeatures.NETHER_DUNGEON, CountPlacementModifier.of(10), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.getTop()), BiomePlacementModifier.of());
+
+
     //Init
     public static void registerModPlacedFeatures() {
         Better_Minecraft.LOGGER.info("Registering placed features for " + Better_Minecraft.MOD_ID);

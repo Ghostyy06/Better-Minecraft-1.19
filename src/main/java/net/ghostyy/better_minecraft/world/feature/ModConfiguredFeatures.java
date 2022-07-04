@@ -7,6 +7,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
@@ -57,8 +58,19 @@ public class ModConfiguredFeatures {
             ConfiguredFeatures.register("soul_magma", Feature.ORE,
                     new OreFeatureConfig(NETHER_SOUL_MAGMA,33, 0.0f));
 
+    //Nether Dungeon
+    public static final Feature<DefaultFeatureConfig> NETHER_MONSTER_ROOM =
+            register("nether_dungeon", new NetherDungeonFeature(DefaultFeatureConfig.CODEC));
+
+    public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> NETHER_DUNGEON =
+            ConfiguredFeatures.register("nether_dungeon", NETHER_MONSTER_ROOM);
+
 
     public static void registerConfiguredFeatures() {
         Better_Minecraft.LOGGER.info("Regsitering configured features for " + Better_Minecraft.MOD_ID);
+    }
+
+    private static <C extends FeatureConfig, F extends Feature<C>> F register(String name, F feature) {
+        return (F) Registry.register(Registry.FEATURE, name, feature);
     }
 }
