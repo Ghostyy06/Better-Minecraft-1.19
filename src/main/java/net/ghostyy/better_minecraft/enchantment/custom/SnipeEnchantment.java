@@ -2,6 +2,7 @@ package net.ghostyy.better_minecraft.enchantment.custom;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.enchantment.PowerEnchantment;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.CrossbowItem;
@@ -35,5 +36,10 @@ public class SnipeEnchantment extends Enchantment {
     @Override
     public boolean isAcceptableItem(ItemStack stack) {
         return stack.getItem() instanceof BowItem || stack.getItem() instanceof CrossbowItem;
+    }
+
+    @Override
+    protected boolean canAccept(Enchantment other) {
+        return !(other instanceof PowerEnchantment);
     }
 }

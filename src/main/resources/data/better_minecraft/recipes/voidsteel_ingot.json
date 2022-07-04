@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "VSV",
-    "SNS",
-    "VSV"
+    "VEV",
+    "ESE",
+    "VEV"
   ],
   "key": {
     "V": {
@@ -12,8 +12,8 @@
     "S": {
       "item": "better_minecraft:shulker_pearl"
     },
-    "N": {
-      "item": "minecraft:netherite_ingot"
+    "E": {
+      "item": "minecraft:echo_shard"
     }
   },
   "result": {
