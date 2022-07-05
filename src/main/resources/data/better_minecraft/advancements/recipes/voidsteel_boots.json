@@ -7,7 +7,7 @@
         "items": [
           {
             "items": [
-              "minecraft:amethyst_shard"
+              "better_minecraft:voidsteel_ingot"
             ]
           }
         ]
@@ -16,7 +16,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "better_minecraft:amethyst_axe"
+        "recipe": "better_minecraft:voidsteel_boots"
       }
     }
   },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "better_minecraft:amethyst_axe"
+      "better_minecraft:voidsteel_boots"
     ]
   }
 }

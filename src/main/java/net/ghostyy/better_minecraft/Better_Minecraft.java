@@ -3,7 +3,6 @@ package net.ghostyy.better_minecraft;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.ghostyy.better_minecraft.block.ModBlocks;
-import net.ghostyy.better_minecraft.effects.potions.ModPotions;
 import net.ghostyy.better_minecraft.enchantment.ModEnchantments;
 import net.ghostyy.better_minecraft.item.ModItems;
 import net.ghostyy.better_minecraft.world.gen.ModWorldGeneration;
@@ -49,6 +48,5 @@ public class Better_Minecraft implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModEnchantments.registerModEnchantments();
 		ModStructures.registerModStructureFeatures();
-		ModPotions.registerPotions();
 	}
 }

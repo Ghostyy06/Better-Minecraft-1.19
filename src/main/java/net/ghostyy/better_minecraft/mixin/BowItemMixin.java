@@ -59,6 +59,7 @@ public abstract class BowItemMixin {
         if (!world.isClient) {
             int k;
             int j;
+            int l;
             ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
             PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
             persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 3.0f * (1.0f + (getSnipeLevel(stack) * 0.25f)), 1.0f - getSnipeLevel(stack) / 3.0f);
@@ -74,6 +75,9 @@ public abstract class BowItemMixin {
             }
             if (EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0) {
                 persistentProjectileEntity.setOnFireFor(100);
+            }
+            if ((l = getSnipeLevel(stack)) > 0) {
+                persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)l * 0.15 + 0.5);
             }
             stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
             if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW))) {

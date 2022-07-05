@@ -7,7 +7,7 @@
         "items": [
           {
             "items": [
-              "minecraft:book"
+              "better_minecraft:voidsteel_ingot"
             ]
           }
         ]
@@ -16,7 +16,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "better_minecraft:oak_bookshelf"
+        "recipe": "better_minecraft:voidsteel_shovel"
       }
     }
   },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "better_minecraft:oak_bookshelf"
+      "better_minecraft:voidsteel_shovel"
     ]
   }
 }

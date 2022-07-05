@@ -10,9 +10,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     VOIDSTEEL(MiningLevels.NETHERITE+1, 2742, 10.0f, 5.0f, 25,
-            () -> Ingredient.ofItems(ModItems.VOIDSTEEL_INGOT)),
-    AMETHYST(MiningLevels.IRON, 200, 11.0f, 2.5f, 40,
-            () -> Ingredient.ofItems(Items.AMETHYST_SHARD));
+            () -> Ingredient.ofItems(ModItems.VOIDSTEEL_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

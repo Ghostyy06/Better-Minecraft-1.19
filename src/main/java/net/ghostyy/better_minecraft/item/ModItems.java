@@ -16,8 +16,6 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item VOIDSTEEL_INGOT = ModRegistry.registerItem("voidsteel_ingot",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
-    public static final Item SHULKER_PEARL = ModRegistry.registerItem("shulker_pearl",
-            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 
     //Voidsteel Tools
     public static final Item VOIDSTEEL_SWORD = ModRegistry.registerItem("voidsteel_sword",
@@ -35,23 +33,6 @@ public class ModItems {
     public static final Item VOIDSTEEL_HOE = ModRegistry.registerItem("voidsteel_hoe",
             new ModHoeItem(ModToolMaterials.VOIDSTEEL, -5, 0f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
-
-    //Amethyst Tools
-    public static final Item AMETHYST_SWORD = ModRegistry.registerItem("amethyst_sword",
-            new SwordItem(ModToolMaterials.AMETHYST, 3, -2.4f,
-                    new FabricItemSettings().group(ItemGroup.COMBAT)));
-    public static final Item AMETHYST_PICKAXE = ModRegistry.registerItem("amethyst_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.AMETHYST, 1, -2.8f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item AMETHYST_AXE = ModRegistry.registerItem("amethyst_axe",
-            new ModAxeItem(ModToolMaterials.AMETHYST, 5, -3.1f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item AMETHYST_SHOVEL = ModRegistry.registerItem("amethyst_shovel",
-            new ShovelItem(ModToolMaterials.AMETHYST, 1.5f, -3f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
-    public static final Item AMETHYST_HOE = ModRegistry.registerItem("amethyst_hoe",
-            new ModHoeItem(ModToolMaterials.AMETHYST, -2, 0f,
-                    new FabricItemSettings().group(ItemGroup.TOOLS)));
 
     //Voidsteel Armor
     public static final Item VOIDSTEEL_HELMET = ModRegistry.registerItem("voidsteel_helmet",

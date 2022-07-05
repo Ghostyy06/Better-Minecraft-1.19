@@ -10,13 +10,6 @@
   "item.better_minecraft.voidsteel_chestplate": "Voidsteel Chestplate",
   "item.better_minecraft.voidsteel_leggings": "Voidsteel Leggings",
   "item.better_minecraft.voidsteel_boots": "Voidsteel Boots",
-  "item.better_minecraft.amethyst_sword": "Amethyst Sword",
-  "item.better_minecraft.amethyst_pickaxe": "Amethyst Pickaxe",
-  "item.better_minecraft.amethyst_axe": "Amethyst Axe",
-  "item.better_minecraft.amethyst_shovel": "Amethyst Shovel",
-  "item.better_minecraft.amethyst_hoe": "Amethyst Hoe",
-  "item.better_minecraft.ender_ghast_spawn_egg": "Ender Ghast Spawn Egg",
-  "item.better_minecraft.shulker_pearl": "Shulker Pearl",
 
   "block.better_minecraft.voidsteel_debris": "Voidsteel Debris",
   "block.better_minecraft.voidsteel_block": "Voidsteel Block",
@@ -46,10 +39,5 @@
   "enchantment.better_minecraft.bane_of_illagers": "Bane of Illagers",
   "enchantment.better_minecraft.snipe": "Snipe",
 
-  "entity.better_minecraft.ender_ghast": "Ender Ghast",
-
-  "item.minecraft.potion.effect.wither": "Potion of Wither",
-  "item.minecraft.splash_potion.effect.wither": "Splash Potion of Wither",
-  "item.minecraft.lingering_potion.effect.wither": "Lingering Potion of Wither",
-  "item.minecraft.tipped_arrow.effect.wither": "Arrow of Wither"
+  "advancements.husbandry.netherite_hoe.description": "Use a Voidsteel Ingot to upgrade a Hoe, and then reevaluate your life choices"
 }

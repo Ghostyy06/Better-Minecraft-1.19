@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "VEV",
-    "ESE",
+    "ENE",
     "VEV"
   ],
   "key": {
     "V": {
       "item": "better_minecraft:voidsteel_scrap"
     },
-    "S": {
-      "item": "better_minecraft:shulker_pearl"
+    "N": {
+      "item": "minecraft:netherite_ingot"
     },
     "E": {
       "item": "minecraft:echo_shard"
