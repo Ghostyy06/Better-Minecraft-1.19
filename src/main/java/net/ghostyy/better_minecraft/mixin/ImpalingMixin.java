@@ -15,6 +15,6 @@ public class ImpalingMixin {
         if (group == EntityGroup.AQUATIC) {
             return (float)level * 2.5f;
         }
-        return (float)level * 1.5f;
+        return (float)level;
     }
 }
