@@ -14,7 +14,8 @@
     "LeavesBlockMixin",
     "BrewingRecipeRegistryMixin",
     "BowItemMixin",
-    "LeavesBlockMixin"
+    "LeavesBlockMixin",
+    "ImpalingMixin"
   ],
   "client": [
     "InGameHudMixin"

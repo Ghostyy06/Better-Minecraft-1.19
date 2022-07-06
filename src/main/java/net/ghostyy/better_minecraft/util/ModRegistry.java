@@ -1,7 +1,9 @@
 package net.ghostyy.better_minecraft.util;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.ghostyy.better_minecraft.Better_Minecraft;
+import net.ghostyy.better_minecraft.block.ModBlocks;
 import net.ghostyy.better_minecraft.mixin.BrewingRecipeRegistryMixin;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
@@ -9,6 +11,7 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.potion.Potion;
 import net.minecraft.util.Identifier;
@@ -60,5 +63,19 @@ public class ModRegistry {
     }
     public static void registerPotionRecipe(Potion input, Item item, Potion output) {
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(input, item, output);
+    }
+
+    //Fuel Registries
+    public static void registerFuels() {
+        FuelRegistry registry = FuelRegistry.INSTANCE;
+        registry.add(ModBlocks.BIRCH_BOOKSHELF.asItem(), 300);
+        registry.add(ModBlocks.SPRUCE_BOOKSHELF.asItem(), 300);
+        registry.add(ModBlocks.JUNGLE_BOOKSHELF.asItem(), 300);
+        registry.add(ModBlocks.ACACIA_BOOKSHELF.asItem(), 300);
+        registry.add(ModBlocks.DARK_OAK_BOOKSHELF.asItem(), 300);
+        registry.add(ModBlocks.CRIMSON_BOOKSHELF.asItem(), 300);
+        registry.add(ModBlocks.WARPED_BOOKSHELF.asItem(), 300);
+        registry.add(ModBlocks.MANGROVE_BOOKSHELF.asItem(), 300);
+        registry.add(ModBlocks.REINFORCED_WOOD.asItem(), 600);
     }
 }
