@@ -13,6 +13,8 @@ import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -33,7 +35,7 @@ public abstract class BowItemMixin {
      * @param user
      * @param remainingUseTicks
      * @author ghostyy
-     * @reason because i had to
+     * @reason makes snipe enchantment work
      */
     @Overwrite
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
@@ -93,6 +95,27 @@ public abstract class BowItemMixin {
             }
         }
         playerEntity.incrementStat(Stats.USED.getOrCreateStat(Items.BOW));
+    }
+
+    /**
+     *
+     * @param world
+     * @param user
+     * @param hand
+     * @return
+     * @author ghostyy
+     * @reason allows infinity to work without any arrows
+     */
+    @Overwrite
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        boolean bl;
+        ItemStack itemStack = user.getStackInHand(hand);
+        boolean bl2 = bl = !user.getArrowType(itemStack).isEmpty();
+        if (user.getAbilities().creativeMode || EnchantmentHelper.getLevel(Enchantments.INFINITY, user.getStackInHand(hand)) > 0 || bl) {
+            user.setCurrentHand(hand);
+            return TypedActionResult.consume(itemStack);
+        }
+        return TypedActionResult.fail(itemStack);
     }
 
     private int getSnipeLevel(ItemStack stack) {
