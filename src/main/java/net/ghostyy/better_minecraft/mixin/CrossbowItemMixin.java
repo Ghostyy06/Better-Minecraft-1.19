@@ -143,8 +143,7 @@ public abstract class CrossbowItemMixin {
     }
 
     @Shadow
-    @Final
-    private static String CHARGED_PROJECTILES_KEY = "ChargedProjectiles";
+    private static final String CHARGED_PROJECTILES_KEY = "ChargedProjectiles";
 
     private static void clearProjectiles(ItemStack crossbow) {
         NbtCompound nbtCompound = crossbow.getNbt();
