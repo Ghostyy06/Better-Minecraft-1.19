@@ -32,6 +32,16 @@
   "block.better_minecraft.warped_bookshelf": "Warped Bookshelf",
   "block.better_minecraft.mangrove_bookshelf": "Mangrove Bookshelf",
 
+  "block.better_minecraft.nether_coal_ore": "Nether Coal Ore",
+  "block.better_minecraft.nether_iron_ore": "Nether Iron Ore",
+  "block.better_minecraft.nether_redstone_ore": "Nether Redstone Ore",
+  "block.better_minecraft.nether_lapis_ore": "Nether Lapis Ore",
+
+  "block.better_minecraft.end_redstone_ore": "End Redstone Ore",
+  "block.better_minecraft.end_lapis_ore": "End Lapis Ore",
+  "block.better_minecraft.end_emerald_ore": "End Emerald Ore",
+  "block.better_minecraft.end_gold_ore": "End Gold Ore",
+
   "subtitles.item.armor.equip_voidsteel": "Voidsteel Armor Clanks",
 
   "itemGroup.better_minecraft.creative_utils": "Creative Utils",

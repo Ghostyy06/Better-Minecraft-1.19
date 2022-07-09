@@ -3,15 +3,20 @@
   "values": [
     "better_minecraft:voidsteel_debris",
     "better_minecraft:voidsteel_block",
-    "better_minecraft:calcite_stairs",
-    "better_minecraft:calcite_slab",
-    "better_minecraft:calcite_wall",
     "minecraft:glowstone",
     "minecraft:sea_lantern",
     "#better_minecraft:glass",
     "#better_minecraft:glass_pane",
     "minecraft:tinted_glass",
     "minecraft:beacon",
-    "better_minecraft:soul_magma"
+    "better_minecraft:soul_magma",
+    "better_minecraft:nether_coal_ore",
+    "better_minecraft:nether_iron_ore",
+    "better_minecraft:nether_lapis_ore",
+    "better_minecraft:nether_redstone_ore",
+    "better_minecraft:end_lapis_ore",
+    "better_minecraft:end_redstone_ore",
+    "better_minecraft:end_gold_ore",
+    "better_minecraft:end_emerald_ore"
   ]
 }

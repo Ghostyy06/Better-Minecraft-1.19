@@ -37,7 +37,7 @@ public class ModTags {
 
         public static final TagKey<Biome> NETHER_WASTES = createCommonTag("nether_wastes");
         public static final TagKey<Biome> SOUL_SAND_VALLEY = createCommonTag("soul_sand_valley");
-        public static final TagKey<Biome> VOIDSTEEL_GENERATES_IN = createTag("voidsteel_generates_in");
+        public static final TagKey<Biome> OUTER_END_ISLANDS = createTag("outer_end_islands");
         public static final TagKey<Biome> WARPED_FOREST = createCommonTag("warped_forest");
 
         private static TagKey<Biome> createTag(String name) {
