@@ -62,26 +62,6 @@ public class ModBlocks {
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
             new ModButtonBlock(false, FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE, false);
 
-    //Nether Ores
-    public static final Block NETHER_COAL_ORE = registerOreVariant("nether", "coal",
-            new OreBlock(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE), UniformIntProvider.create(0, 2)));
-    public static final Block NETHER_IRON_ORE = registerOreVariant("nether", "iron",
-            new OreBlock(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE)));
-    public static final Block NETHER_REDSTONE_ORE = registerOreVariant("nether", "redstone",
-            new RedstoneOreBlock(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE)));
-    public static final Block NETHER_LAPIS_ORE = registerOreVariant("nether", "lapis",
-            new OreBlock(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE), UniformIntProvider.create(2, 5)));
-
-    //End Ores
-    public static final Block END_REDSTONE_ORE = registerOreVariant("end", "redstone",
-            new RedstoneOreBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4.5f, 9.0f)));
-    public static final Block END_LAPIS_ORE = registerOreVariant("end", "lapis",
-            new OreBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4.5f, 9.0f), UniformIntProvider.create(2, 5)));
-    public static final Block END_EMERALD_ORE = registerOreVariant("end", "emerald",
-            new OreBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4.5f, 9.0f), UniformIntProvider.create(3, 7)));
-    public static final Block END_GOLD_ORE = registerOreVariant("end", "gold",
-            new OreBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4.5f, 9.0f)));
-
     //Registries
     private static Block registerBlock(String name, Block block, ItemGroup group, boolean fireproof) {
         registerBlockItem(name, block, group, fireproof);

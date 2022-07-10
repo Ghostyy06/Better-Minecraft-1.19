@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "better_minecraft:end_lapis_ore",
-    "better_minecraft:end_redstone_ore",
-    "better_minecraft:end_gold_ore",
-    "better_minecraft:end_emerald_ore"
-  ]
-}

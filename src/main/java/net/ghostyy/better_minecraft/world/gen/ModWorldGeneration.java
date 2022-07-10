@@ -7,6 +7,6 @@ public class ModWorldGeneration {
     public static void generateModWorldGen() {
         ModFeatureGeneration.generateFeatures();
         ModConfiguredFeatures.registerConfiguredFeatures();
-        ModPlacedFeatures.registerModPlacedFeatures();
+        ModPlacedFeatures.registerPlacedFeatures();
     }
 }

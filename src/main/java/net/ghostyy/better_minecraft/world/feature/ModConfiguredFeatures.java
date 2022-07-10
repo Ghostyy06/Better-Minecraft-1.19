@@ -57,60 +57,6 @@ public class ModConfiguredFeatures {
             ConfiguredFeatures.register("soul_magma", Feature.ORE,
                     new OreFeatureConfig(SOUL_MAGMA_CONFIG,33, 0.0f));
 
-    //Nether Ores
-    private static final List<OreFeatureConfig.Target> NETHER_COAL_ORE_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.NETHERRACK),
-                    ModBlocks.NETHER_COAL_ORE.getDefaultState()));
-    private static final List<OreFeatureConfig.Target> NETHER_IRON_ORE_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.NETHERRACK),
-                    ModBlocks.NETHER_IRON_ORE.getDefaultState()));
-    private static final List<OreFeatureConfig.Target> NETHER_LAPIS_ORE_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.NETHERRACK),
-                    ModBlocks.NETHER_LAPIS_ORE.getDefaultState()));
-    private static final List<OreFeatureConfig.Target> NETHER_REDSTONE_ORE_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.NETHERRACK),
-                    ModBlocks.NETHER_REDSTONE_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_COAL_ORE =
-            ConfiguredFeatures.register("nether_coal_ore", Feature.ORE,
-                    new OreFeatureConfig(NETHER_COAL_ORE_CONFIG, 12, 0.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_IRON_ORE =
-            ConfiguredFeatures.register("nether_iron_ore", Feature.ORE,
-                    new OreFeatureConfig(NETHER_IRON_ORE_CONFIG, 10, 0.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_LAPIS_ORE =
-            ConfiguredFeatures.register("nether_lapis_ore", Feature.ORE,
-                    new OreFeatureConfig(NETHER_LAPIS_ORE_CONFIG, 8, 0.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_REDSTONE_ORE =
-            ConfiguredFeatures.register("nether_redstone_ore", Feature.ORE,
-                    new OreFeatureConfig(NETHER_REDSTONE_ORE_CONFIG, 8, 0.0f));
-
-    //End Ores
-    private static final List<OreFeatureConfig.Target> END_LAPIS_ORE_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.END_STONE),
-                    ModBlocks.END_LAPIS_ORE.getDefaultState()));
-    private static final List<OreFeatureConfig.Target> END_REDSTONE_ORE_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.END_STONE),
-                    ModBlocks.END_REDSTONE_ORE.getDefaultState()));
-    private static final List<OreFeatureConfig.Target> END_GOLD_ORE_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.END_STONE),
-                    ModBlocks.END_GOLD_ORE.getDefaultState()));
-    private static final List<OreFeatureConfig.Target> END_EMERALD_ORE_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.END_STONE),
-                    ModBlocks.END_EMERALD_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> END_LAPIS_ORE =
-            ConfiguredFeatures.register("end_lapis_ore", Feature.ORE,
-                    new OreFeatureConfig(END_LAPIS_ORE_CONFIG, 8, 0.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> END_REDSTONE_ORE =
-            ConfiguredFeatures.register("end_redstone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_REDSTONE_ORE_CONFIG, 8, 0.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> END_GOLD_ORE =
-            ConfiguredFeatures.register("end_gold_ore", Feature.ORE,
-                    new OreFeatureConfig(END_GOLD_ORE_CONFIG, 6, 0.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> END_EMERALD_ORE =
-            ConfiguredFeatures.register("end_emerald_ore", Feature.ORE,
-                    new OreFeatureConfig(END_EMERALD_ORE_CONFIG, 4, 0.0f));
-
     public static void registerConfiguredFeatures() {
         Better_Minecraft.LOGGER.info("Regsitering configured features for " + Better_Minecraft.MOD_ID);
     }

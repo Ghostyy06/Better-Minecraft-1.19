@@ -6,7 +6,6 @@ import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.NetherConfiguredFeatures;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
-import net.minecraft.world.gen.feature.UndergroundConfiguredFeatures;
 import net.minecraft.world.gen.placementmodifier.*;
 
 public class ModPlacedFeatures {
@@ -31,7 +30,7 @@ public class ModPlacedFeatures {
 
     //Soul Magma
     public static final RegistryEntry<PlacedFeature> SOUL_MAGMA = PlacedFeatures.register("soul_magma",
-            ModConfiguredFeatures.SOUL_MAGMA, ModOreFeatures.modifiersWithCount(4,
+            ModConfiguredFeatures.SOUL_MAGMA, ModOreFeatures.modifiersWithCount(2,
                     HeightRangePlacementModifier.uniform(YOffset.aboveBottom(64), YOffset.belowTop(0))));
 
     //Extra Basalt Pillars
@@ -39,39 +38,11 @@ public class ModPlacedFeatures {
             NetherConfiguredFeatures.BASALT_PILLAR, CountPlacementModifier.of(10),
             SquarePlacementModifier.of(), PlacedFeatures.BOTTOM_TO_TOP_RANGE);
     public static final RegistryEntry<PlacedFeature> SOUL_SAND_VALLEY_BASALT_PILLAR = PlacedFeatures.register("soul_sand_valley_basalt_pillar",
-            NetherConfiguredFeatures.BASALT_PILLAR, CountPlacementModifier.of(40),
+            NetherConfiguredFeatures.BASALT_PILLAR, CountPlacementModifier.of(20),
             SquarePlacementModifier.of(), PlacedFeatures.BOTTOM_TO_TOP_RANGE);
 
-    //Nether Ores
-    public static final RegistryEntry<PlacedFeature> NETHER_COAL_ORE = PlacedFeatures.register("nether_coal_ore",
-            ModConfiguredFeatures.NETHER_COAL_ORE, ModOreFeatures.modifiersWithCount(15,
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-    public static final RegistryEntry<PlacedFeature> NETHER_IRON_ORE = PlacedFeatures.register("nether_iron_ore",
-            ModConfiguredFeatures.NETHER_IRON_ORE, ModOreFeatures.modifiersWithCount(12,
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-    public static final RegistryEntry<PlacedFeature> NETHER_REDSTONE_ORE = PlacedFeatures.register("nether_redstone_ore",
-            ModConfiguredFeatures.NETHER_REDSTONE_ORE, ModOreFeatures.modifiersWithCount(8,
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-    public static final RegistryEntry<PlacedFeature> NETHER_LAPIS_ORE = PlacedFeatures.register("nether_lapis_ore",
-            ModConfiguredFeatures.NETHER_LAPIS_ORE, ModOreFeatures.modifiersWithCount(8,
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-
-    //End Ores
-    public static final RegistryEntry<PlacedFeature> END_LAPIS_ORE = PlacedFeatures.register("end_lapis_ore",
-            ModConfiguredFeatures.END_LAPIS_ORE, ModOreFeatures.modifiersWithCount(10,
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-    public static final RegistryEntry<PlacedFeature> END_REDSTONE_ORE = PlacedFeatures.register("end_redstone_ore",
-            ModConfiguredFeatures.END_REDSTONE_ORE, ModOreFeatures.modifiersWithCount(10,
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-    public static final RegistryEntry<PlacedFeature> END_GOLD_ORE = PlacedFeatures.register("end_gold_ore",
-            ModConfiguredFeatures.END_GOLD_ORE, ModOreFeatures.modifiersWithCount(6,
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-    public static final RegistryEntry<PlacedFeature> END_EMERALD_ORE = PlacedFeatures.register("end_emerald_ore",
-            ModConfiguredFeatures.END_EMERALD_ORE, ModOreFeatures.modifiersWithCount(4,
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-
     //Init
-    public static void registerModPlacedFeatures() {
+    public static void registerPlacedFeatures() {
         Better_Minecraft.LOGGER.info("Registering placed features for " + Better_Minecraft.MOD_ID);
     }
 

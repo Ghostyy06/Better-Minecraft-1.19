@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:gold_ore",
-    "minecraft:deepslate_gold_ore",
-    "better_minecraft:end_gold_ore"
-  ]
-}

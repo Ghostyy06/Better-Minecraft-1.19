@@ -33,23 +33,5 @@ public class ModFeatureGeneration {
                 GenerationStep.Feature.LOCAL_MODIFICATIONS, ModPlacedFeatures.WASTES_BASALT_PILLAR.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.SOUL_SAND_VALLEY),
                 GenerationStep.Feature.LOCAL_MODIFICATIONS, ModPlacedFeatures.SOUL_SAND_VALLEY_BASALT_PILLAR.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NETHER_COAL_ORE.getKey().get());
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NETHER_IRON_ORE.getKey().get());
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NETHER_LAPIS_ORE.getKey().get());
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.NETHER_REDSTONE_ORE.getKey().get());
-
-        BiomeModifications.addFeature(OUTER_END_ISLANDS,
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.END_LAPIS_ORE.getKey().get());
-        BiomeModifications.addFeature(OUTER_END_ISLANDS,
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.END_REDSTONE_ORE.getKey().get());
-        BiomeModifications.addFeature(OUTER_END_ISLANDS,
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.END_GOLD_ORE.getKey().get());
-        BiomeModifications.addFeature(OUTER_END_ISLANDS,
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.END_EMERALD_ORE.getKey().get());
     }
 }
