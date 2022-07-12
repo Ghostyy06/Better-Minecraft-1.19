@@ -10,11 +10,6 @@ import net.minecraft.world.gen.placementmodifier.*;
 
 public class ModPlacedFeatures {
 
-    //Voidsteel Debris
-    public static final RegistryEntry<PlacedFeature> VOIDSTEEL_DEBRIS = PlacedFeatures.register("voidsteel_debris",
-            ModConfiguredFeatures.VOIDSTEEL_DEBRIS, ModOreFeatures.modifiersWithCount(3,
-                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(16), YOffset.aboveBottom(32))));
-
     //End Obsidian
     public static final RegistryEntry<PlacedFeature> OBSIDIAN_CLUMP = PlacedFeatures.register("obsidian_clump",
             ModConfiguredFeatures.OBSIDIAN_CLUMP, ModOreFeatures.modifiersWithCount(4,

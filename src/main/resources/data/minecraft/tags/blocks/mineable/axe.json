@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "#minecraft:beds",
-    "#better_minecraft:bookshelves",
     "better_minecraft:reinforced_wood"
   ]
 }

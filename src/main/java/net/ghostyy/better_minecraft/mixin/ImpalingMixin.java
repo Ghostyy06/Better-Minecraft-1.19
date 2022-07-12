@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ImpalingEnchantment.class)
-public class ImpalingMixin {
+public abstract class ImpalingMixin {
 
     @Inject(method = "getAttackDamage", at = @At("RETURN"))
     public float getAttackDamage(int level, EntityGroup group, CallbackInfoReturnable<Float> info) {

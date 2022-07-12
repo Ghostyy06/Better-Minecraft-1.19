@@ -1,13 +1,12 @@
 {
   "replace": false,
   "values": [
-    "better_minecraft:voidsteel_debris",
-    "better_minecraft:voidsteel_block",
     "minecraft:glowstone",
     "minecraft:sea_lantern",
     "#better_minecraft:glass",
     "#better_minecraft:glass_pane",
     "minecraft:tinted_glass",
-    "minecraft:beacon"
+    "minecraft:beacon",
+    "better_minecraft:soul_magma"
   ]
 }

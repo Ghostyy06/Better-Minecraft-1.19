@@ -15,8 +15,6 @@ public class ModFeatureGeneration {
             BiomeSelectors.tag(ModTags.Biomes.OUTER_END_ISLANDS);
 
     public static void generateFeatures() {
-        BiomeModifications.addFeature(OUTER_END_ISLANDS,
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.VOIDSTEEL_DEBRIS.getKey().get());
 
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.OBSIDIAN_CLUMP.getKey().get());

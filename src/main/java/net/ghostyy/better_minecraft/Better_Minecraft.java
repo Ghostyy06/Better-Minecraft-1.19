@@ -53,6 +53,5 @@ public class Better_Minecraft implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModEnchantments.registerModEnchantments();
 		ModStructures.registerModStructureFeatures();
-		ModRegistry.registerFuels();
 	}
 }

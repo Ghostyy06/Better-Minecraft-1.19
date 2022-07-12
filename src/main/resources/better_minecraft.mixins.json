@@ -4,7 +4,6 @@
   "package": "net.ghostyy.better_minecraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "VoidsteelArmorMixin",
     "EnchantingTableBlockMixin",
     "ArmorStandEntityMixin",
     "MobSpawnerLogicMixin",

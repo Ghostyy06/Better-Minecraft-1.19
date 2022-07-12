@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "better_minecraft:voidsteel_debris"
-  },
-  "result": "better_minecraft:voidsteel_scrap",
-  "experience": 25.0,
-  "cookingtime": 1600
-}

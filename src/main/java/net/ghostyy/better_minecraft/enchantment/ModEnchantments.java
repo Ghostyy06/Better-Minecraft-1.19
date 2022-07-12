@@ -10,8 +10,6 @@ import net.minecraft.util.registry.Registry;
 
 public class ModEnchantments {
 
-    public static final Enchantment BANE_OF_ILLAGERS = registerEnchantment("bane_of_illagers",
-            new ExtraDamageEnchantment(Enchantment.Rarity.UNCOMMON, ExtraDamageEnchantment.ILLAGERS, EquipmentSlot.MAINHAND));
     public static final Enchantment SNIPE = registerEnchantment("snipe",
             new SnipeEnchantment(Enchantment.Rarity.RARE, EquipmentSlot.MAINHAND));
 

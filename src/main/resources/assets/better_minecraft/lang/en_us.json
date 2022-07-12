@@ -1,53 +1,9 @@
 {
-  "item.better_minecraft.voidsteel_scrap": "Voidsteel Scrap",
-  "item.better_minecraft.voidsteel_ingot": "Voidsteel Ingot",
-  "item.better_minecraft.voidsteel_sword": "Voidsteel Sword",
-  "item.better_minecraft.voidsteel_pickaxe": "Voidsteel Pickaxe",
-  "item.better_minecraft.voidsteel_axe": "Voidsteel Axe",
-  "item.better_minecraft.voidsteel_shovel": "Voidsteel Shovel",
-  "item.better_minecraft.voidsteel_hoe": "Voidsteel Hoe",
-  "item.better_minecraft.voidsteel_helmet": "Voidsteel Helmet",
-  "item.better_minecraft.voidsteel_chestplate": "Voidsteel Chestplate",
-  "item.better_minecraft.voidsteel_leggings": "Voidsteel Leggings",
-  "item.better_minecraft.voidsteel_boots": "Voidsteel Boots",
-
-  "block.better_minecraft.voidsteel_debris": "Voidsteel Debris",
-  "block.better_minecraft.voidsteel_block": "Voidsteel Block",
-  "block.better_minecraft.calcite_stairs": "Calcite Stairs",
-  "block.better_minecraft.calcite_slab": "Calcite Slab",
-  "block.better_minecraft.calcite_wall": "Calcite Wall",
-  "block.better_minecraft.reinforced_wood": "Reinforced Wood",
-
   "block.better_minecraft.iron_button": "Iron Button",
   "block.better_minecraft.gold_button": "Gold Button",
   "block.better_minecraft.soul_magma": "Soul Magma Block",
-  
-  "block.minecraft.bookshelf": "Oak Bookshelf",
-  "block.better_minecraft.birch_bookshelf": "Birch Bookshelf",
-  "block.better_minecraft.spruce_bookshelf": "Spruce Bookshelf",
-  "block.better_minecraft.jungle_bookshelf": "Jungle Bookshelf",
-  "block.better_minecraft.acacia_bookshelf": "Acacia Bookshelf",
-  "block.better_minecraft.dark_oak_bookshelf": "Dark Oak Bookshelf",
-  "block.better_minecraft.crimson_bookshelf": "Crimson Bookshelf",
-  "block.better_minecraft.warped_bookshelf": "Warped Bookshelf",
-  "block.better_minecraft.mangrove_bookshelf": "Mangrove Bookshelf",
-
-  "block.better_minecraft.nether_coal_ore": "Nether Coal Ore",
-  "block.better_minecraft.nether_iron_ore": "Nether Iron Ore",
-  "block.better_minecraft.nether_redstone_ore": "Nether Redstone Ore",
-  "block.better_minecraft.nether_lapis_ore": "Nether Lapis Ore",
-
-  "block.better_minecraft.end_redstone_ore": "End Redstone Ore",
-  "block.better_minecraft.end_lapis_ore": "End Lapis Ore",
-  "block.better_minecraft.end_emerald_ore": "End Emerald Ore",
-  "block.better_minecraft.end_gold_ore": "End Gold Ore",
-
-  "subtitles.item.armor.equip_voidsteel": "Voidsteel Armor Clanks",
 
   "itemGroup.better_minecraft.creative_utils": "Creative Utils",
 
-  "enchantment.better_minecraft.bane_of_illagers": "Bane of Illagers",
-  "enchantment.better_minecraft.snipe": "Snipe",
-
-  "advancements.husbandry.netherite_hoe.description": "Use a Voidsteel Ingot to upgrade a Hoe, and then reevaluate your life choices"
+  "enchantment.better_minecraft.snipe": "Snipe"
 }

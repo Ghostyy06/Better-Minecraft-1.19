@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(InfinityEnchantment.class)
-public class InfinityMixin {
+public abstract class InfinityMixin {
 
     @Inject(method = "canAccept", at = @At("RETURN"))
     public boolean canAccept(Enchantment other, CallbackInfoReturnable<Boolean> info) {

@@ -20,14 +20,6 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
 
-    //Voidsteel Debris
-    private static final List<OreFeatureConfig.Target> VOIDSTEEL_DEBRIS_CONFIG = List.of(
-            OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
-                    ModBlocks.VOIDSTEEL_DEBRIS.getDefaultState()));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> VOIDSTEEL_DEBRIS =
-            ConfiguredFeatures.register("voidsteel_debris", Feature.SCATTERED_ORE,
-                    new OreFeatureConfig(VOIDSTEEL_DEBRIS_CONFIG,4, 1.0f));
-
     //End Obsidian
     private static final List<OreFeatureConfig.Target> OBSIDIAN_CLUMP_CONFIG = List.of(
             OreFeatureConfig.createTarget(new TagMatchRuleTest(ModTags.Blocks.BASE_STONE_END),
