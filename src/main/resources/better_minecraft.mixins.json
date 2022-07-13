@@ -4,7 +4,6 @@
   "package": "net.ghostyy.better_minecraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "EnchantingTableBlockMixin",
     "ArmorStandEntityMixin",
     "MobSpawnerLogicMixin",
     "CrossbowItemMixin",
@@ -15,7 +14,8 @@
     "BowItemMixin",
     "LeavesBlockMixin",
     "ImpalingMixin",
-    "InfinityMixin"
+    "InfinityMixin",
+    "LandPathNodeMixin"
   ],
   "client": [
     "InGameHudMixin"
