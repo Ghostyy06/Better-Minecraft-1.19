@@ -26,9 +26,9 @@ public class ModBlocks {
 
     //Redstone
     public static final Block IRON_BUTTON = registerBlock("iron_button",
-            new ModButtonBlock(true, FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE, false);
+            new ModButtonBlock(40, FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE, false);
     public static final Block GOLD_BUTTON = registerBlock("gold_button",
-            new ModButtonBlock(false, FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE, false);
+            new ModButtonBlock(10, FabricBlockSettings.copyOf(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)), ItemGroup.REDSTONE, false);
 
     //Registries
     private static Block registerBlock(String name, Block block, ItemGroup group, boolean fireproof) {

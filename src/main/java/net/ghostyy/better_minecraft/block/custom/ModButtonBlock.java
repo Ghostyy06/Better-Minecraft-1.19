@@ -10,15 +10,15 @@ import net.minecraft.world.World;
 
 public class ModButtonBlock extends AbstractButtonBlock {
 
-    public boolean Iron;
+    public int pressTicks;
 
-    public ModButtonBlock(boolean iron, Settings settings) {
+    public ModButtonBlock(int pressTicks, Settings settings) {
         super(false, settings);
-        this.Iron = iron;
+        this.pressTicks = pressTicks;
     }
 
     private int getPressTicks() {
-        return this.Iron ? 40 : 10;
+        return this.pressTicks;
     }
 
     @Override

@@ -7,6 +7,8 @@
     "#better_minecraft:glass_pane",
     "minecraft:tinted_glass",
     "minecraft:beacon",
-    "better_minecraft:soul_magma"
+    "better_minecraft:soul_magma",
+    "better_minecraft:iron_button",
+    "better_minecraft:gold_button"
   ]
 }
