@@ -23,9 +23,6 @@ public class ModBlocks {
             new SoulMagmaBlock(FabricBlockSettings.of(Material.STONE).mapColor(MapColor.BRIGHT_TEAL).requiresTool().luminance(state -> 3)
                     .ticksRandomly().strength(0.5f).allowsSpawning((state, world, pos, entitytype) -> entitytype.isFireImmune())
                     .postProcess(ModBlocks::always).emissiveLighting(ModBlocks::always)), ItemGroup.BUILDING_BLOCKS, false);
-    public static final Block REINFORCED_WOOD = registerBlock("reinforced_wood",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(3.0f, 5.5f).requiresTool().sounds(BlockSoundGroup.WOOD)),
-            ItemGroup.BUILDING_BLOCKS, false);
 
     //Redstone
     public static final Block IRON_BUTTON = registerBlock("iron_button",
