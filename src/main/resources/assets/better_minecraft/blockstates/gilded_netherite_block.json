@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "better_minecraft:block/gilded_netherite_block"
+      }
+    ]
+  }
+}

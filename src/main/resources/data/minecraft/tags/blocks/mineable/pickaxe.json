@@ -9,6 +9,11 @@
     "minecraft:beacon",
     "better_minecraft:soul_magma",
     "better_minecraft:iron_button",
-    "better_minecraft:gold_button"
+    "better_minecraft:gold_button",
+    "minecraft:redstone_lamp",
+    "better_minecraft:gilded_debris",
+    "better_minecraft:gilded_netherite_block",
+    "better_minecraft:reinforced_debris",
+    "better_minecraft:reinforced_netherite_block"
   ]
 }

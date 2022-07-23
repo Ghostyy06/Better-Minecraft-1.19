@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "better_minecraft:gilded_debris",
+    "better_minecraft:gilded_netherite_block",
+    "better_minecraft:reinforced_debris",
+    "better_minecraft:reinforced_netherite_block"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "better_minecraft:reinforced_debris"
+  },
+  "result": "better_minecraft:reinforced_netherite_scrap",
+  "experience": 1.0,
+  "cookingtime": 200
+  
+}

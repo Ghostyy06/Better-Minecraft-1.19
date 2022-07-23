@@ -15,7 +15,8 @@
     "LeavesBlockMixin",
     "ImpalingMixin",
     "InfinityMixin",
-    "LandPathNodeMixin"
+    "LandPathNodeMixin",
+    "ArmorItemMixin"
   ],
   "client": [
     "InGameHudMixin"
