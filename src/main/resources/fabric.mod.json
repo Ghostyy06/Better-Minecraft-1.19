@@ -19,10 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.ghostyy.better_minecraft.Better_Minecraft"
+      "net.myndmelt.better_minecraft.Better_Minecraft"
     ],
     "client": [
-      "net.ghostyy.better_minecraft.Better_Minecraft_Client"
+      "net.myndmelt.better_minecraft.Better_Minecraft_Client"
     ]
   },
   "mixins": [

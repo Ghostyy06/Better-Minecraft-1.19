@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.ghostyy.better_minecraft.mixin",
+  "package": "net.myndmelt.better_minecraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ArmorStandEntityMixin",
@@ -9,14 +9,14 @@
     "CrossbowItemMixin",
     "RavagerEntityMixin",
     "FoliageColorsMixin",
-    "LeavesBlockMixin",
     "BrewingRecipeRegistryMixin",
     "BowItemMixin",
-    "LeavesBlockMixin",
     "ImpalingMixin",
     "InfinityMixin",
     "LandPathNodeMixin",
-    "ArmorItemMixin"
+    "ArmorItemMixin",
+    "PiglinBrainMixin",
+    "IntegratedServerLoaderMixin"
   ],
   "client": [
     "InGameHudMixin"
