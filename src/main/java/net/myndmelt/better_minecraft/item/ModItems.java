@@ -28,19 +28,19 @@ public class ModItems {
 
     //Gilded Netherite Tools
     public static Item GILDED_NETHERITE_SWORD = registerItem("gilded_netherite_sword",
-            new SwordItem(ModToolMaterials.GILDED_NETHERITE, 3, -2.4f,
+            new SwordItem(ModToolMaterials.GILDED_NETHERITE, 3, -2.0f,
                     new FabricItemSettings().group(ItemGroup.COMBAT).fireproof()));
     public static Item GILDED_NETHERITE_PICKAXE = registerItem("gilded_netherite_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.GILDED_NETHERITE, 1, -2.8f,
+            new ModPickaxeItem(ModToolMaterials.GILDED_NETHERITE, 1, -2.4f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static Item GILDED_NETHERITE_AXE = registerItem("gilded_netherite_axe",
-            new ModAxeItem(ModToolMaterials.GILDED_NETHERITE, 5, -3.0f,
+            new ModAxeItem(ModToolMaterials.GILDED_NETHERITE, 5, -2.6f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static Item GILDED_NETHERITE_SHOVEL = registerItem("gilded_netherite_shovel",
-            new ShovelItem(ModToolMaterials.GILDED_NETHERITE, 1.5f, -3.0f,
+            new ShovelItem(ModToolMaterials.GILDED_NETHERITE, 1.5f, -2.6f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
     public static Item GILDED_NETHERITE_HOE = registerItem("gilded_netherite_hoe",
-            new ModHoeItem(ModToolMaterials.GILDED_NETHERITE, -3.5f, -2.4f,
+            new ModHoeItem(ModToolMaterials.GILDED_NETHERITE, -3.5f, -2.0f,
                     new FabricItemSettings().group(ItemGroup.TOOLS).fireproof()));
 
     //Gilded Netherite Armor

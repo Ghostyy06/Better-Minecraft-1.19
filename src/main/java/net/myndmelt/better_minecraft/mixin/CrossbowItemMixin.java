@@ -41,9 +41,9 @@ public abstract class CrossbowItemMixin {
     @Inject(method = "getSpeed", at = @At("RETURN"))
     private static float getSpeed(ItemStack stack, CallbackInfoReturnable<Float> info) {
         if (CrossbowItem.hasProjectile(stack, Items.FIREWORK_ROCKET)) {
-            return 1.6f + (getSnipelevel(stack) * 0.325f);
+            return 1.6f;
         }
-        return 3.15f + (getSnipelevel(stack) * 0.65f);
+        return 3.15f;
     }
 
     /**
@@ -53,7 +53,7 @@ public abstract class CrossbowItemMixin {
      * @param crossbow
      * @param arrow
      * @return
-     * @author ghostyy
+     * @author myndmelt
      * @reason because i had to
      */
     @Overwrite
@@ -92,7 +92,7 @@ public abstract class CrossbowItemMixin {
      * @param stack
      * @param speed
      * @param divergence
-     * @author ghostyy
+     * @author myndmelt
      * @reason because i had to
      */
     @Overwrite

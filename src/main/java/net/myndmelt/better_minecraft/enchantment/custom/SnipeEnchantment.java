@@ -40,6 +40,6 @@ public class SnipeEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return !(other instanceof PowerEnchantment || other instanceof SnipeEnchantment);
+        return !(other instanceof SnipeEnchantment);
     }
 }

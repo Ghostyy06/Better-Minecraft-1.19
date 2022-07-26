@@ -1,5 +1,6 @@
 package net.myndmelt.better_minecraft.mixin;
 
+import net.myndmelt.better_minecraft.Better_Minecraft;
 import net.myndmelt.better_minecraft.enchantment.ModEnchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
@@ -17,6 +18,9 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(BowItem.class)
 public abstract class BowItemMixin {
@@ -32,7 +36,7 @@ public abstract class BowItemMixin {
      * @param world
      * @param user
      * @param remainingUseTicks
-     * @author ghostyy
+     * @author myndmelt
      * @reason makes snipe enchantment work
      */
     @Overwrite
@@ -59,10 +63,9 @@ public abstract class BowItemMixin {
         if (!world.isClient) {
             int k;
             int j;
-            int l;
             ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
             PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-            persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 3.0f * (1.0f + (getSnipeLevel(stack) * 0.25f)), 1.0f - getSnipeLevel(stack) / 3.0f);
+            persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 3.0f, 1.0f - getSnipeLevel(stack) / 3.0f);
             if (f >= 1.0f) {
                 persistentProjectileEntity.setCritical(true);
             }
@@ -75,9 +78,6 @@ public abstract class BowItemMixin {
             }
             if (EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0) {
                 persistentProjectileEntity.setOnFireFor(100);
-            }
-            if ((l = getSnipeLevel(stack)) > 0) {
-                persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)l * 0.15 + 0.5);
             }
             stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
             if (bl2 || playerEntity.getAbilities().creativeMode && (itemStack.isOf(Items.SPECTRAL_ARROW) || itemStack.isOf(Items.TIPPED_ARROW))) {
@@ -93,6 +93,7 @@ public abstract class BowItemMixin {
             }
         }
         playerEntity.incrementStat(Stats.USED.getOrCreateStat(Items.BOW));
+        Better_Minecraft.LOGGER.info(String.valueOf(f));
     }
 
     private int getSnipeLevel(ItemStack stack) {

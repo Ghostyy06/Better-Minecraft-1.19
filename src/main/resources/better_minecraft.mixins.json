@@ -8,7 +8,6 @@
     "MobSpawnerLogicMixin",
     "CrossbowItemMixin",
     "RavagerEntityMixin",
-    "FoliageColorsMixin",
     "BrewingRecipeRegistryMixin",
     "BowItemMixin",
     "ImpalingMixin",
@@ -19,7 +18,10 @@
     "IntegratedServerLoaderMixin"
   ],
   "client": [
-    "InGameHudMixin"
+    "InGameHudMixin",
+    "FoliageColorsMixin",
+    "BiomeColorsMixin",
+    "SplashOverlayMixin"
   ],
   "injectors": {
     "defaultRequire": 1
