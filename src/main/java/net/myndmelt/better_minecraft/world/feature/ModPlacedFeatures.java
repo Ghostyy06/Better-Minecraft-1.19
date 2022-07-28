@@ -36,18 +36,6 @@ public class ModPlacedFeatures {
             NetherConfiguredFeatures.BASALT_PILLAR, CountPlacementModifier.of(20),
             SquarePlacementModifier.of(), PlacedFeatures.BOTTOM_TO_TOP_RANGE);
 
-    //Netherite Variants
-    public static final RegistryEntry<PlacedFeature> GILDED_DEBRIS_SMALL = PlacedFeatures.register("gilded_debris_small",
-            ModConfiguredFeatures.GILDED_DEBRIS_SMALL, SquarePlacementModifier.of(), PlacedFeatures.EIGHT_ABOVE_AND_BELOW_RANGE);
-    public static final RegistryEntry<PlacedFeature> GILDED_DEBRIS_LARGE = PlacedFeatures.register("gilded_debris_large",
-            ModConfiguredFeatures.GILDED_DEBRIS_LARGE, SquarePlacementModifier.of(),
-            HeightRangePlacementModifier.trapezoid(YOffset.fixed(104), YOffset.fixed(120)));
-    public static final RegistryEntry<PlacedFeature> REINFORCED_DEBRIS_SMALL = PlacedFeatures.register("reinforced_debris_small",
-            ModConfiguredFeatures.REINFORCED_DEBRIS_SMALL, SquarePlacementModifier.of(), PlacedFeatures.EIGHT_ABOVE_AND_BELOW_RANGE);
-    public static final RegistryEntry<PlacedFeature> REINFORCED_DEBRIS_LARGE = PlacedFeatures.register("reinforced_debris_large",
-            ModConfiguredFeatures.REINFORCED_DEBRIS_LARGE, SquarePlacementModifier.of(),
-            HeightRangePlacementModifier.trapezoid(YOffset.fixed(104), YOffset.fixed(120)));
-
     //Init
     public static void registerPlacedFeatures() {
         Better_Minecraft.LOGGER.info("Registering placed features for " + Better_Minecraft.MOD_ID);

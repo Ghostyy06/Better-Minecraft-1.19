@@ -44,24 +44,6 @@ public class ModConfiguredFeatures {
             ConfiguredFeatures.register("soul_magma", Feature.ORE,
                     new OreFeatureConfig(SOUL_MAGMA_CONFIG,33, 0.0f));
 
-    //Netherite Variants
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> GILDED_DEBRIS_SMALL =
-            ConfiguredFeatures.register("gilded_debris_small", Feature.SCATTERED_ORE,
-                    new OreFeatureConfig(new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER),
-                            ModBlocks.GILDED_DEBRIS.getDefaultState(), 2, 1.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> GILDED_DEBRIS_LARGE =
-            ConfiguredFeatures.register("gilded_debris_large", Feature.SCATTERED_ORE,
-                    new OreFeatureConfig(new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER),
-                            ModBlocks.GILDED_DEBRIS.getDefaultState(), 3, 1.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> REINFORCED_DEBRIS_SMALL =
-            ConfiguredFeatures.register("reinforced_debris_small", Feature.SCATTERED_ORE,
-                    new OreFeatureConfig(new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER),
-                            ModBlocks.REINFORCED_DEBRIS.getDefaultState(), 2, 1.0f));
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> REINFORCED_DEBRIS_LARGE =
-            ConfiguredFeatures.register("reinforced_debris_large", Feature.SCATTERED_ORE,
-                    new OreFeatureConfig(new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER),
-                            ModBlocks.REINFORCED_DEBRIS.getDefaultState(), 3, 1.0f));
-
     public static void registerConfiguredFeatures() {
         Better_Minecraft.LOGGER.info("Regsitering configured features for " + Better_Minecraft.MOD_ID);
     }

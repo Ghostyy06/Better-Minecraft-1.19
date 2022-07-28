@@ -13,8 +13,6 @@
     "ImpalingMixin",
     "InfinityMixin",
     "LandPathNodeMixin",
-    "ArmorItemMixin",
-    "PiglinBrainMixin",
     "IntegratedServerLoaderMixin"
   ],
   "client": [

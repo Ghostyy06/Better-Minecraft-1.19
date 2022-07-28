@@ -31,14 +31,5 @@ public class ModFeatureGeneration {
                 GenerationStep.Feature.LOCAL_MODIFICATIONS, ModPlacedFeatures.WASTES_BASALT_PILLAR.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.SOUL_SAND_VALLEY),
                 GenerationStep.Feature.LOCAL_MODIFICATIONS, ModPlacedFeatures.SOUL_SAND_VALLEY_BASALT_PILLAR.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.GILDED_DEBRIS_SMALL.getKey().get());
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.GILDED_DEBRIS_LARGE.getKey().get());
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.REINFORCED_DEBRIS_SMALL.getKey().get());
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.REINFORCED_DEBRIS_LARGE.getKey().get());
     }
 }

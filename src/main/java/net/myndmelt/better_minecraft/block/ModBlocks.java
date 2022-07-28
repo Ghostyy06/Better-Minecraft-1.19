@@ -17,22 +17,6 @@ import static net.myndmelt.better_minecraft.Better_Minecraft.MOD_ID;
 
 public class ModBlocks {
 
-    //Gilded Netherite
-    public static final Block GILDED_DEBRIS = registerBlock("gilded_debris",
-            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength(40.0f, 1200.0f)),
-            ItemGroup.BUILDING_BLOCKS, true);
-    public static final Block GILDED_NETHERITE_BLOCK = registerBlock("gilded_netherite_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).strength(60.0f, 1200.0f)),
-            ItemGroup.BUILDING_BLOCKS, true);
-
-    //Reinforced Netherite
-    public static final Block REINFORCED_DEBRIS = registerBlock("reinforced_debris",
-            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).strength(40.0f, 1200.0f)),
-            ItemGroup.BUILDING_BLOCKS, true);
-    public static final Block REINFORCED_NETHERITE_BLOCK = registerBlock("reinforced_netherite_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).strength(60.0f, 1200.0f)),
-            ItemGroup.BUILDING_BLOCKS, true);
-
     //Soul Magma
     public static final Block SOUL_MAGMA = registerBlock("soul_magma",
             new SoulMagmaBlock(FabricBlockSettings.of(Material.STONE).mapColor(MapColor.BRIGHT_TEAL).requiresTool().luminance(state -> 3)
