@@ -2,11 +2,6 @@ package net.myndmelt.better_minecraft;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.myndmelt.better_minecraft.block.ModBlocks;
-import net.myndmelt.better_minecraft.enchantment.ModEnchantments;
-import net.myndmelt.better_minecraft.item.ModItems;
-import net.myndmelt.better_minecraft.world.gen.ModWorldGeneration;
-import net.myndmelt.better_minecraft.world.structure.ModStructures;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -43,10 +38,5 @@ public class Better_Minecraft implements ModInitializer {
 	public void onInitialize() {
 
 		//Sets up all registries and worldgen
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
-		ModWorldGeneration.generateModWorldGen();
-		ModEnchantments.registerModEnchantments();
-		ModStructures.registerModStructureFeatures();
 	}
 }

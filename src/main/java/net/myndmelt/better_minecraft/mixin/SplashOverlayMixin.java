@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(SplashOverlay.class)
-public class SplashOverlayMixin {
+public abstract class SplashOverlayMixin {
 
     /**
      *

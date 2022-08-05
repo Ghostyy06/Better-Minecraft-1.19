@@ -6,13 +6,8 @@
   "mixins": [
     "ArmorStandEntityMixin",
     "MobSpawnerLogicMixin",
-    "CrossbowItemMixin",
-    "RavagerEntityMixin",
-    "BrewingRecipeRegistryMixin",
-    "BowItemMixin",
     "ImpalingMixin",
     "InfinityMixin",
-    "LandPathNodeMixin",
     "IntegratedServerLoaderMixin"
   ],
   "client": [
